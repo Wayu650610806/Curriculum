@@ -20,7 +20,7 @@ int main(){
     }
     if(count==-1) cout << "Don't have this subject";
     else{
-        cout<<code[count]<<" "<<subject[count];
+        cout<<code[count]<<" "<<subject[count]<<" ";
     }
 
 }
