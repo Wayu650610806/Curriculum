@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-string data(int x){
-    int  key[] = {206161,206162,206261,207105,207106,207115,207116,252281,259104,259106,261208,261216,261306};
+void CoreCourses(string x){
+    string  key[] = {"206161","206162","206261","207105","207106","207115","207116","252281","259104","259106","261208","261216","261306"};
     string Cal1 = "Calculus for Engineering 1";
     string Cal2 = "Calculus for Engineering 2";
     string Cal3 = "Calculus for Engineering 3";
@@ -31,5 +31,4 @@ string data(int x){
     else{
         cout << key[count] << " " << subject[count] << endl;
     }
-    return "0";
 }
