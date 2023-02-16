@@ -2,7 +2,7 @@
 using namespace std;
 
 void CoreCourses(string x){
-    string  key[] = {"206161","206162","206261","207105","207106","207115","207116","252281","259104","259106","261208","261216","261306"};
+    string  code[] = {"206161","206162","206261","207105","207106","207115","207116","252281","259104","259106","261208","261216","261306"};
     string Cal1 = "Calculus for Engineering 1";
     string Cal2 = "Calculus for Engineering 2";
     string Cal3 = "Calculus for Engineering 3";
@@ -18,10 +18,10 @@ void CoreCourses(string x){
     string ProbStat = "Computer Engineering Probability and Statistics";
     string subject[] = {Cal1,Cal2,Cal3,Phy1,Phy2,PhyL1,PhyL2,Circuit,Draw1,Workshop,Numeric,DisMath,ProbStat};
     
-    int n = sizeof(key)/sizeof(key[0]);
+    int n = sizeof(code)/sizeof(code[0]);
     int count = -1;
     for(int i = 0; i<n;i++){
-        if(x == key[i]){
+        if(x == code[i]){
             count = i;
             break;
         }
@@ -29,6 +29,7 @@ void CoreCourses(string x){
 
     if(count == -1) cout << "Don't have this subject";
     else{
-        cout << key[count] << " " << subject[count] << endl;
+        cout << code[count] << " " << subject[count] << endl;
     }
+
 }
