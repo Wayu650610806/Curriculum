@@ -3,5 +3,43 @@
 using namespace std;
 
 int main(){
-    string code[]={"261405","261431","261492","261102","261200","261217","261218","261361","261103","261207","261332","261335","261336","261342","261343","261210","261212","261214","261215","261304","261305"};
-    string subject[]={"Advanced Computer Engineering Technology","Project Survey,Project","Computer Programming","Object-Oriented Programming","Data Structures for Computer Engineers","Algorithms for Computer Engineers","Software Engineering","Basic Computer Engineering","Basic Computer Engineering Laboratory","Data and Computer Communications","Computer Networks","Computer Networks Laboratory","Fundamentals of Database Systems","Database System Laboratory","Logic and Digital Circuits","Logic and Digital Circuits Laboratory","Microprocessor and Interfacing","Embedded System Laboratory","Computer Architecture","Operating Systems"};   //There are 21 subjects in total.
+    //There are 21 subjects in total.
+    
+    // There are 3 subjects in Technology_for_Application
+    string Technology_for_Application_key[]={"261405","261491","261492"};
+    string ="Advanced Computer Engineering Technology";
+    string ="Project Survey";
+    string ="Project";
+    string Technology_for_Application_subject[]={};
+    
+    //There are 5 subjects in Technology_and_Software_Methods
+    string Technology_and_Software_Methods_key[]={"261102","261200","261217","261218","261361"};
+    string ="Computer Programming";
+    string ="Object-Oriented Programming";
+    string ="Data Structures for Computer Engineers";
+    string ="Algorithms for Computer Engineers";
+    string ="Software Engineering";
+    string Technology_for_Application_subject[]={};
+    
+    //There are 7 subjects in Basic_Structure_of_the_Systems
+    string Basic_Structure_of_the_Systems_key[]={"261103","261207","261332","261335","261336","261342","261343"};
+    string ="Basic Computer Engineering";
+    string ="Basic Computer Engineering Laboratory";
+    string ="Data and Computer Communications";
+    string ="Computer Networks";
+    string ="Computer Networks Laboratory";
+    string ="Fundamentals of Database Systems";
+    string ="Database System Laboratory";
+    string Basic_Structure_of_the_Systems_subject[]={};
+    
+    //There are 6 subjects in Hardware_and_Computer_Architecture
+    string Hardware_and_Computer_Architecture_key[]={"261210","261212","261214","261215","261304","261305"};
+    string ="Logic and Digital Circuits";
+    string ="Logic and Digital Circuits Laboratory";
+    string ="Microprocessor and Interfacing";
+    string ="Embedded System Laboratory";
+    string ="Computer Architecture";
+    string ="Operating Systems";
+    string Hardware_and_Computer_Architecture_subject[]={};
+    
+}
