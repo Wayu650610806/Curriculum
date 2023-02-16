@@ -1,0 +1,7 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string code[]={"261405","261431","261492","261102","261200","261217","261218","261361","261103","261207","261332","261335","261336","261342","261343","261210","261212","261214","261215","261304","261305"};
+    string subject[]={"Advanced Computer Engineering Technology","Project Survey,Project","Computer Programming","Object-Oriented Programming","Data Structures for Computer Engineers","Algorithms for Computer Engineers","Software Engineering","Basic Computer Engineering","Basic Computer Engineering Laboratory","Data and Computer Communications","Computer Networks","Computer Networks Laboratory","Fundamentals of Database Systems","Database System Laboratory","Logic and Digital Circuits","Logic and Digital Circuits Laboratory","Microprocessor and Interfacing","Embedded System Laboratory","Computer Architecture","Operating Systems"};   //There are 21 subjects in total.
