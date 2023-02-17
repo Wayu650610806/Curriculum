@@ -24,7 +24,7 @@ void Learner_Required(string x){
 
             if(count == -1) cout << "Don't have this subject";
             else{
-                cout << Learner_Required_subject[count] << " " << Learner_Required_subject[count] << endl;
+                cout << Learner_Required_key[count] << " " << Learner_Required_subject[count] << endl;
             }
 
     }
