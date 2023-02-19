@@ -28,7 +28,6 @@ string CoreCourses(string x){
             break;
         }
     }
-
     if(count == -1) return 0;
     else{
         return code[count]+" "+subject[count];

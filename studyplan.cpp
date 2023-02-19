@@ -15,6 +15,5 @@ int main(){
     for(int i=0;i<sizeof(F1)/sizeof(F1[0]);i++){
         cout<<F1[i]<<"\n";
     }
-    
     return 0;
 }
