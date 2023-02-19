@@ -1,9 +1,5 @@
 #include<iostream>
-#include"CoreCourses.cpp"
-#include"ActiveCitizen.cpp"
-#include"Major_Electives.cpp"
-#include"Major_Normal_Plan.cpp"
-#include"Required_Courses&Elective.cpp"
+#include"Subject.cpp"
 #include"StudyMap.cpp"
 #include"FirstYear.cpp"
 using namespace std;
