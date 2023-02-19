@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 
-void ActiveCitizen(string x){
+string ActiveCitizen(string x){
     string code[]={"140104","259191","011100","109114","127100","128100","154104","254182","256131","259108","259193","259195","602102","801100","951100"};
     string subject[]={"Citizenship","Principle of Being Professional","Man and Philosophy","Art in Everyday Life",
     "Politics in Everyday Life","Basic Good Governance in Administration","Environmental Conservation","Introduction to Energy",
@@ -16,10 +16,13 @@ void ActiveCitizen(string x){
             break;
         }
     }
-
-    if(count == -1) cout << "Don't have this subject";
+//  cout << "Don't have this subject"
+    if(count == -1) return 0;
     else{
-        cout << code[count] << " " << subject[count] << endl;
+        return code[count]+" "+subject[count];
     }
+    
+    
+
 
 }
