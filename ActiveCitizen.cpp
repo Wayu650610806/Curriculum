@@ -16,7 +16,7 @@ string ActiveCitizen(string x){
             break;
         }
     }
-//  cout << "Don't have this subject"
+//  copy below here
     if(count == -1) return 0;
     else{
         return code[count]+" "+subject[count];
