@@ -32,7 +32,7 @@ string Major(string x){
     string ComArchitecture = "Computer Architecture";
     string OperatingSystems = "Operating Systems";
     
-    string Major_subject[] = {"AdvancedComENGR","ProjSurvey","Project","ComProgramming","ObjectProgramming","DataStructres","Algorithms","SoftwareENGR","BasicCom","BasicComLab","DataCommu","ComNetworks","ComNetworksLab","DatabaseSystems","DatabaseSystemsLab","DigitalCircuits","DigitalCircuitsLab","Microprocessor","EmbeddedSystemLab","ComArchitecture","OperatingSystems"};
+    string Major_subject[] = {AdvancedComENGR,ProjSurvey,Project,ComProgramming,ObjectProgramming,DataStructres,Algorithms,SoftwareENGR,BasicCom,BasicComLab,DataCommu,ComNetworks,ComNetworksLab,DatabaseSystems,DatabaseSystemsLab,DigitalCircuits,DigitalCircuitsLab,Microprocessor,EmbeddedSystemLab,ComArchitecture,OperatingSystems};
     int credit[]={3,1,3,3,3,3,3,3,3,2,3,3,1,3,1,3,1,3,1,3,3};
     int n = sizeof(Major_key)/sizeof(Major_key[0]);
         int count = -1;
