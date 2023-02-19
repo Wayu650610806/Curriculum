@@ -23,6 +23,9 @@ void MajorElec(string x){
                         "Computer Network Traffic Analysis", "Wireless And Broadband Computer Networks", "Wireless Sensor Network",
                         "Peer-to-Peer Systems", "Computer Network Routing Protocols", "Information Retrieval and Extraction",
                         "Personal Software Process Improvement", "Introduction to Human-Computer Interaction", "Computer Engineering Training"};
+		string unit[] = {"2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"
+						, "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3",
+						 "3", "3", "3", "3", "3"} ;
         int n = sizeof(code)/sizeof(code[0]);
         int count = -1;
         for(int i = 0; i<n;i++){
@@ -31,10 +34,8 @@ void MajorElec(string x){
                 break;
             }
         }
-
-        if(count == -1) cout << "Don't have this subject";
-        else{
-            cout << code[count] << " " << subject[count] << endl;
+        if(count == -1) return 0;
+    else{
+        return code[count]+" "+subject[count];
         }
-
 }
