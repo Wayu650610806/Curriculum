@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-string Learner_Required(string x){
+string Learner(string x){
         string Learner_Required_key[]={"001101","001102","001201","001225","204100","261111","953111","201100","203100","211100","462130","571116","701181","702101","705191"};
 		int Learner_Required_credits[]={3,3,3,3,3,3,3,3,3,3,3,3,3,3,1};
 		
@@ -33,11 +33,11 @@ string Learner_Required(string x){
 
 	    if(count == -1) return 0;
 	    else{
-		return string Learner_Required_key[count]+" "+Learner_Required_subject[count];
+		return Learner_Required_key[count]+" "+Learner_Required_subject[count];
 	    }
     }
 
-string Innovative_Required(string x){
+string Innovative(string x){
     string Innovative_Required_key[]={"259192","013110","050106","176100","201114","201117","201190","207109","207110","368100","602201","610111","703103","751100","851103","852100","259194"};
      int Innovative_Required_credits[]={1,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,1};
 	
