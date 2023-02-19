@@ -11,6 +11,7 @@ void Technology_for_Application(string x){
     string ProjSurvey = "Project Survey";
     string Project = "Project";
     string Technology_for_Application_subject[] = {"AdvancedComENGR","ProjSurvey","Project"};
+    int credit[]={3,1,3};
     int n = sizeof(Technology_for_Application_key)/sizeof(Technology_for_Application_key[0]);
         int count = -1;
             for(int i = 0; i<n;i++){
@@ -34,6 +35,7 @@ void Technology_and_Software_Methods(string x){
     string Algorithms = "Algorithms for Computer Engineers";
     string SoftwareENGR = "Software Engineering";
     string Technology_for_Application_subject[] = {"ComProgramming","ObjectProgramming","DataStructres","Algorithms","SoftwareENGR"};
+    int credit[]={3,3,3,3,3};
     int n = sizeof(Technology_and_Software_Methods_key)/sizeof(Technology_and_Software_Methods_key[0]);
     int count = -1;
         for(int i = 0; i<n;i++){
@@ -60,6 +62,7 @@ void Basic_Structure_of_the_Systems(string x){
     string DatabaseSystems = "Fundamentals of Database Systems";
     string DatabaseSystemsLab = "Database System Laboratory";
     string Basic_Structure_of_the_Systems_subject[]={"BasicCom","BasicComLab","DataCommu","ComNetworks","ComNetworksLab","DatabaseSystems","DatabaseSystemsLab"};
+    int credit[]={3,2,3,3,1,3,1};
     int n = sizeof(Basic_Structure_of_the_Systems_key)/sizeof(Basic_Structure_of_the_Systems_key[0]);
     int count = -1;
         for(int i = 0; i<n;i++){
@@ -84,6 +87,7 @@ void Hardware_and_Computer_Architecture(string x){
     string ComArchitecture = "Computer Architecture";
     string OperatingSystems = "Operating Systems";
     string Hardware_and_Computer_Architecture_subject[] = {"DigitalCircuits","DigitalCircuitsLab","Microprocessor","EmbeddedSystemLab","ComArchitecture","OperatingSystems"};
+    int credit[]={3,1,3,1,3,3};
     int n = sizeof(Hardware_and_Computer_Architecture_key)/sizeof(Hardware_and_Computer_Architecture_key[0]);
     int count = -1;
         for(int i = 0; i<n;i++){

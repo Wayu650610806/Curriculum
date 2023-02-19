@@ -3,7 +3,8 @@ using namespace std;
 
 void Learner_Required(string x){
         string Learner_Required_key[]={"001101","001102","001201","001225","204100","261111","953111"};
-
+	int Learner_Required_credits[]={3,3,3,3,3,3,3};
+		
         string Eng1="Fundamental English 1";
         string Eng2="Fundamental English 2";
         string ReadWrite="Critical Reading and Effective Writing";
@@ -31,7 +32,8 @@ void Learner_Required(string x){
 
 void Innovative_Required(string x){
     string Innovative_Required_key[]={"259192","013110","050106","176100","201114","201117","201190","207109","207110","368100","602201","610111","703103","751100","851103","852100"};
-
+     int Innovative_Required_credits[]={1,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3};
+	
     string Skillpro="Skills for Professionalism and Entrepreneurship";
     string Psychology="Psychology and Daily Life";
     string Humanis="Humanistic Arts";
@@ -67,6 +69,7 @@ void Innovative_Required(string x){
 
 void Learner_Elective(string x){
         string Learner_Elective_key[]={"201100","203100","211100","462130","571116","701181","702101","705191"};
+	int Learner_Elective_credits[]={3,3,3,3,3,3,3,1};
 
         string IntSci="Integrated Science";
         string Chemistry="Chemistry in Everyday Life";
@@ -82,6 +85,7 @@ void Learner_Elective(string x){
 
 
         string Innovative_Elective_key[]={"259194"};
+        int Innovative_Elective_credits={1};
 
         string Characteristics="Characteristics and Values for Being a Professional Entrepreneur";
 
@@ -100,3 +104,7 @@ void Learner_Elective(string x){
                 cout << Learner_Elective_key[count] << " " << Innovative_Elective_subject[count] << endl;
             }
 }
+
+
+
+
