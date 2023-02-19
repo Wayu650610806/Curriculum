@@ -32,7 +32,7 @@ void Learner_Required(string x){
 
 void Innovative_Required(string x){
     string Innovative_Required_key[]={"259192","013110","050106","176100","201114","201117","201190","207109","207110","368100","602201","610111","703103","751100","851103","852100"};
-    int Innovative_Required_credits[]={1,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3};
+     int Innovative_Required_credits[]={1,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3};
 	
     string Skillpro="Skills for Professionalism and Entrepreneurship";
     string Psychology="Psychology and Daily Life";
