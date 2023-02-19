@@ -22,7 +22,6 @@ string ActiveCitizen(string x){
         return code[count]+" "+subject[count];
     }
     
-    
 
 
 }
