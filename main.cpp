@@ -5,6 +5,7 @@
 #include"Major_Normal_Plan.cpp"
 #include"Required_Courses&Elective.cpp"
 #include"StudyMap.cpp"
+#include"FirstYear.cpp"
 using namespace std;
 
 void studyMap(){
@@ -20,7 +21,9 @@ string plan(){
 }
 
 int main(){
+     
     int command=0;
+    int y,s;
     cout<<"\t\t\t\t\t\tCurriculum Management\n";
     cout<<"Please select\n";
     cout<<"\t1.Show Map\n\t2.Curriculum\n";
@@ -28,7 +31,9 @@ int main(){
     cin>>command;
     if(command==1)studyMap();
     if(command==2){
-
+        cout<<"Input Year and Semester :";
+        cin>>y;
+        ShowCu(y);
     }
     
 
