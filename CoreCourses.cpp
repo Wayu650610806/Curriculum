@@ -17,7 +17,7 @@ void CoreCourses(string x){
     string DisMath = "Discrete Mathematics for Computer Engineers";
     string ProbStat = "Computer Engineering Probability and Statistics";
     string subject[] = {Cal1,Cal2,Cal3,Phy1,Phy2,PhyL1,PhyL2,Circuit,Draw1,Workshop,Numeric,DisMath,ProbStat};
-    int credit[]={3,3,3,3,3,1,1,3,3,1,3,3,3};
+    int credit[]={3,3,3,3,3,1,1,3,3,1,3,3,3} ;
     int n = sizeof(code)/sizeof(code[0]);
     int count = -1;
     for(int i = 0; i<n;i++){
