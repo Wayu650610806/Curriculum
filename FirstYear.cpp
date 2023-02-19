@@ -5,7 +5,7 @@ using namespace std;
   
 void ShowCu(int input){
     string F1[]={Learner("001101"),ActiveCitizen("140104"),CoreCourses("206161"),CoreCourses("207105"),CoreCourses("207115"),CoreCourses("259104"),CoreCourses("259106"),ActiveCitizen("259191"),Major("261103")};
-    string F2[]={Learner("001102"),CoreCourses("206162"),CoreCourses("207106"),CoreCourses("207116"),CoreCourses("252281"),Major("261102")}
+    string F2[]={Learner("001102"),CoreCourses("206162"),CoreCourses("207106"),CoreCourses("207116"),CoreCourses("252281"),Major("261102")};
     }
 int SecondYear(){
     string S1[]={Learner("001201"),CoreCourses("206261"),Major("261207"),Major("261210"),Major("261212"),CoreCourses("261216"),Major("261217")};
