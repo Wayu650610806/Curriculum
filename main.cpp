@@ -20,8 +20,16 @@ string plan(){
 }
 
 int main(){
+    int command=0;
     cout<<"\t\t\t\t\t\tCurriculum Management\n";
-    studyMap();
+    cout<<"Please select\n";
+    cout<<"\t1.Show Map\n\t2.Curriculum\n";
+    cout<<"Input number : ";
+    cin>>command;
+    if(command==1)studyMap();
+    if(command==2){
+
+    }
     
 
    
