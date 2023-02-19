@@ -21,10 +21,10 @@ void Technology_for_Application(string x){
                 }
             }
 
-            if(count == -1) cout << "Don't have this subject";
+            if(count == -1) return 0;
             else{
-                cout << Technology_for_Application_key[count] << " " << Technology_for_Application_subject[count] << endl;
-            }
+                return Technology_for_Application_key[count]+" "+Technology_for_Application_subject[count];
+        }  
 }
 void Technology_and_Software_Methods(string x){   
     //There are 5 subjects in Technology_and_Software_Methods
@@ -45,10 +45,10 @@ void Technology_and_Software_Methods(string x){
             }
         }
 
-        if(count == -1) cout << "Don't have this subject";
+        if(count == -1) return 0;
         else{
-            cout << Technology_and_Software_Methods_key[count] << " " << Technology_for_Application_subject[count] << endl;
-        }
+            return Technology_and_Software_Methods_key[count]+" "+Technology_and_Software_Methods_subject[count];
+        }  
 
 }
 void Basic_Structure_of_the_Systems(string x){
@@ -72,10 +72,10 @@ void Basic_Structure_of_the_Systems(string x){
             }
         }
 
-        if(count == -1) cout << "Don't have this subject";
+        if(count == -1) return 0;
         else{
-            cout << Basic_Structure_of_the_Systems_key[count] << " " << Basic_Structure_of_the_Systems_subject[count] << endl;
-        }
+            return Basic_Structure_of_the_Systems_key[count]+" "+Basic_Structure_of_the_Systems_subject[count];
+        }   
 }
 void Hardware_and_Computer_Architecture(string x){
     //There are 6 subjects in Hardware_and_Computer_Architecture
@@ -92,13 +92,13 @@ void Hardware_and_Computer_Architecture(string x){
     int count = -1;
         for(int i = 0; i<n;i++){
             if(x == Hardware_and_Computer_Architecture_key[i]){
-               count = i;
+                count = i;
                 break;
             }
         }
 
-        if(count == -1) cout << "Don't have this subject";
+        if(count == -1) return 0;
         else{
-            cout << Hardware_and_Computer_Architecture_key[count] << " " << Hardware_and_Computer_Architecture_subject[count] << endl;
+            return Hardware_and_Computer_Architecture_key[count]+" "+Hardware_and_Computer_Architecture_subject[count];
         }    
 }
