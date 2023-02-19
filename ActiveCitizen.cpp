@@ -7,6 +7,7 @@ void ActiveCitizen(string x){
     string subject[]={"Citizenship","Principle of Being Professional","Man and Philosophy","Art in Everyday Life",
     "Politics in Everyday Life","Basic Good Governance in Administration","Environmental Conservation","Introduction to Energy",
     "Urban Mining","Electricity in Everyday Life","Morality and Intelligence for Being a Professional","Managing Activities for Development","Life and Alternative Energy","Architecture in Everyday Life","Modern Life and Animation"};
+    int credit[]={3,1,3,3,3,3,3,3,3,3,1,1,3,3,3};
     int n = sizeof(code)/sizeof(code[0]);
     int count = -1;
     for(int i = 0; i<n;i++){
