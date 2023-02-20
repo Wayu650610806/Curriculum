@@ -1,7 +1,7 @@
 #include<iostream>
 #include"Subject.cpp"
 #include"StudyMap.cpp"
-#include"FirstYear.cpp"
+#include"Curriculum.cpp"
 using namespace std;
 
 void studyMap(){
@@ -27,9 +27,13 @@ int main(){
     cin>>command;
     if(command==1)studyMap();
     if(command==2){
-        cout<<"Input Year and Semester :";
+        cout<<"Input Year : ";
         cin>>y;
-        ShowCu(y);
+        cout<<"Input Semester : ";
+        cin>>s;
+        int key=y*2+s;
+        ShowCu(key);
+        
     }
     
 
