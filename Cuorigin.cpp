@@ -70,7 +70,32 @@ int S2(){
     cout<<"	261332	Data and Computer Communications                    3\n";
     
 }
-//รอปี 3
+
+void T1(){
+    cout<<"\t\t\t\t\tThird Year\n";
+    cout<<"First Semester\n";
+    cout<<"	261304	Computer Architecture	                        3\n";
+    cout<<"	261335	Computer Networks	                        3\n";
+    cout<<"\t261336	Computer Networks Laboratory                    1\n";
+    cout<<"	261342	Fundamentals of Database Systems                3\n";
+    cout<<"	261343	Database System Laboratory                      1\n";
+    cout<<"\t        Major Elective                                  3\n";
+    cout<<"	        Innovative Co-creator                           3\n"; 
+    cout<<"\t\t\t\t\t\t   Total\t17\n";
+
+}
+void T2(){
+    cout<<"\t\t\t\t\tThird Year\n";
+    cout<<"Second Semester\n";
+    cout<<"	261305 Operating Systems	                        3\n";
+    cout<<"	261306 Computer Engineering Probability and Statistics	3\n";
+    cout<<"	261361 Software Engineering	                        3\n";
+    cout<<"\t       Major Elective	                          \t3\n";
+    cout<<"\t       General Education Elective Course	        1\n";
+    cout<<"\t       Learner person	                          \t3\n";
+    cout<<"\t\t\t\t\t\t   Total\t16\n";
+}
+
 void Fo1(){
     cout<<"\t\t\t\t\tFourth Year\n";
     cout<<"First Semester\n";
