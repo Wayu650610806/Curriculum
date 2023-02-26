@@ -1,0 +1,10 @@
+First Semester
+001101,	ENGL	101	,Fundamental English 1,3(3-0-6)
+140104,	PGjh	104	,Citizenship,3(3-0-6)
+206161,	MATH	161	,Calculus for Engineering 1,3(3-0-6)
+207105,	PHYS	105	,Physics for Engineering and Agro-Industry Students 1,3(3-0-6)
+207115,	PHYS	115	,Physics Laboratory for Engineering and Agro-Industry Students 1,1(0-3-0)
+259104,	ENGR	104	,Engineering Drawing,3(2-3-4)
+259106,	ENGR	106	,Workshop Technology,1(0-3-0)
+259191,	ENGR	191	,Principle of Being Professional,1(0-3-1)
+261103,	CPlE	103	,Basic Computer Engineering,3(1-6-2)
