@@ -46,7 +46,7 @@ int F1(){
     
     return 19;
 }
-int s11(){
+int S1(){
     cout<<"\t\t\t\t\tSecond Year\n";
     cout<<"First Semester\n";
     cout<<"	001201	Critical Reading and Effective Writing	            3\n";
@@ -58,7 +58,7 @@ int s11(){
     cout<<"	261217	Data Structures for Computer Engineers              3\n";
     cout<<"		    General Education Elective Course               3\n";
 }
-int s12(){
+int S2(){
     cout<<"\t\t\t\t\tSecond Year\n";
     cout<<"Second Semester\n";
     cout<<"	001225	English in Science and Technology Context	    3\n";
@@ -70,8 +70,8 @@ int s12(){
     cout<<"	261332	Data and Computer Communications                    3\n";
     
 }
-
-void Y4S1(){
+//รอปี 3
+void Fo1(){
     cout<<"\t\t\t\t\tFourth Year\n";
     cout<<"First Semester\n";
     cout<<"\t261491	Project Survey  \t\t\t\t\t 1" << endl;
@@ -80,7 +80,7 @@ void Y4S1(){
     cout<<"\t\t\t\t\t\t\t\t Total\t 13"<<endl;
 }
 
-void Y4S2(){
+void Fo2(){
     cout<<"\t\t\t\t\tFourth Year\n";
     cout<<"First Semester\n";
     cout<<"\t259192 Skills for Professionalism and Entrepreneurship	\t 1" << endl;

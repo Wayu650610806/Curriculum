@@ -1,12 +1,18 @@
-First Semester
-001101,	ENGL	101	,Fundamental English 1,3(3-0-6)
-140104,	PGjh	104	,Citizenship,3(3-0-6)
-206161,	MATH	161	,Calculus for Engineering 1,3(3-0-6)
-207105,	PHYS	105	,Physics for Engineering and Agro-Industry Students 1,3(3-0-6)
-207115,	PHYS	115	,Physics Laboratory for Engineering and Agro-Industry Students 1,1(0-3-0)
-259104,	ENGR	104	,Engineering Drawing,3(2-3-4)
-259106,	ENGR	106	,Workshop Technology,1(0-3-0)
-259191,	ENGR	191	,Principle of Being Professional,1(0-3-1)
-261103,	CPlE	103	,Basic Computer Engineering,3(1-6-2)
-
-
+F1
+001101,Fundamental English 1,3
+140104,Citizenship,3
+206161,Calculus for Engineering 1,3
+207105,Physics for Engineering and Agro-Industry Students 1,3
+207115,Physics Laboratory for Engineering and Agro-Industry Students 1,1
+259104,Engineering Drawing,3
+259106,Workshop Technology,1
+259191,Principle of Being Professional,1
+261103,Basic Computer Engineering,3
+F2
+S1
+S2
+T1
+T2
+Fo1
+Fo2
+//เติมให้ครบ รูปแบบ รหัส,name,credit
