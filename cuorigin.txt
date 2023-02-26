@@ -8,3 +8,5 @@ First Semester
 259106,	ENGR	106	,Workshop Technology,1(0-3-0)
 259191,	ENGR	191	,Principle of Being Professional,1(0-3-1)
 261103,	CPlE	103	,Basic Computer Engineering,3(1-6-2)
+
+

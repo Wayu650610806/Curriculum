@@ -3,6 +3,7 @@
 #include<fstream>
 #include<vector>
 #include<iomanip>
+
 using namespace std;
 struct course{
 	char name[100];
