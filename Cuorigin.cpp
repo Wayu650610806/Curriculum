@@ -32,7 +32,7 @@ int F1(){
     
     return 21;
 }
-int F1(){
+int F2(){
     cout<<"\t\t\t\t\tFirst Year\n";
     cout<<"Second Semester\n";
     cout<<"	001102	Fundamental English 2\t\t\t\t\t\t\t3\n";
