@@ -46,4 +46,5 @@ Fo1
 Fo2
 259192,Skills for Professionalism and Entrepreneurship,1
 261405,Advanced Computer Engineering Technology,3
+261492,CPE	492	Project,3
 //เติมให้ครบ รูปแบบ รหัส,name,credit
