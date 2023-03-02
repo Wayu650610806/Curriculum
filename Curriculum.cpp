@@ -9,72 +9,106 @@ string toUpperStr(string x){
 }
   
 string ShowCu(int input,int sem){
-    string F1[]={Learner("001101"),ActiveCitizen("140104"),CoreCourses("206161"),CoreCourses("207105"),CoreCourses("207115"),CoreCourses("259104"),CoreCourses("259106"),ActiveCitizen("259191"),Major("261103")};
-    string F2[]={Learner("001102"),CoreCourses("206162"),CoreCourses("207106"),CoreCourses("207116"),CoreCourses("252281"),Major("261102")};
-    string S1[]={Learner("001201"),CoreCourses("206261"),Major("261207"),Major("261210"),Major("261212"),CoreCourses("261216"),Major("261217")};
-    string S2[]={Learner("001225"),Major("261200"),CoreCourses("261208"),Major("261214"),Major("261215"),Major("261218"),Major("261332")};   
-    string T1[]={Major("261304"),Major("261335"),Major("261336"),Major("261342"),Major("261343")};
-    string T2[]={Major("261305"),CoreCourses("261306"),Major("261361")};
-    string Fo1[]={Major("261491")};
-    string Fo2[]={Innovative("259192"),Major("261405"),Major("261492")};
        switch (input)
         {
         case 1:
             if(sem == 1){
-                cout<<"\t\t\t\t First Year Semester 1\n";
-                for(int i=0;i<sizeof(F1)/sizeof(F1[0]);i++){
-                    cout<<"\t\t"<<F1[i]<<"\n";
-                }
+                cout<<"\t\t\t\t\tFirst Year\n";
+                cout<<"First Semester\n";
+                cout<<"	001101	Fundamental English 1\t\t\t\t\t\t\t\t\t3\n";
+                cout<<"	140104	Citizenship\t\t\t\t\t\t\t\t\t\t3\n";
+                cout<<"	206161	Calculus for Engineering 1\t\t\t\t\t\t\t\t3\n";
+                cout<<"\t207105	Physics for Engineering and Agro-Industry Students 1\t\t\t\t\t3\n";
+                cout<<"\t207115	Physics Laboratory for Engineering and Agro-Industry Students 1\t\t\t\t1\n";
+                cout<<"\t259104	Engineering Drawing\t\t\t\t\t\t\t\t\t3\n";
+                cout<<"\t259106	Workshop Technology\t\t\t\t\t\t\t\t\t3\n";
+                cout<<"\t259191	Principle of Being Professional\t\t\t\t\t\t\t\t1\n";
+                cout<<"\t261103	Basic Computer Engineering\t\t\t\t\t\t\t\t3\n";
+                cout<<"\t\t\t\t\t\t\t\t\t\t\t\ttotal\t21\n";
             }else if(sem == 2){
-                cout<<"\t\t\t\t First Year Semester 2\n";
-                for(int i=0;i<sizeof(F2)/sizeof(F2[0]);i++){
-                    cout<<"\t\t"<<F2[i]<<"\n";
-                }
+                cout<<"\t\t\t\t\tFirst Year\n";
+                cout<<"Second Semester\n";
+                cout<<"	001102	Fundamental English 2\t\t\t\t\t\t\t3\n";
+                cout<<"	206162  Calculus for Engineering 2\t\t\t\t\t\t3\n";
+                cout<<"\t207106	Physics for Engineering and Agro-Industry Students 2\t\t\t3\n";
+                cout<<"\t207116	Physics Laboratory for Engineering and Agro-Industry Students 2\t\t1\n";
+
+                cout<<"\t252281	Fundamentals of Electronic Circuits for Information Systems and Network Engineering\t\t\t\t\t\t3\n";
+                cout<<"\t261102	Computer Programming\t\t\t\t\t\t3\n";
+                cout<<"\t\t\t\t\t\t\t\t\t\ttotal\t19\n";
             }else{
                 cout << "Invalid" << "\n";
             }
             break;
         case 2:
             if(sem == 1){
-                cout<<"\t\t\t\t Second Year Semester 1\n";
-                for(int i=0;i<sizeof(S1)/sizeof(S1[0]);i++){
-                    cout<<"\t\t"<<S1[i]<<"\n";
-                }
+                cout<<"\t\t\t\t\tSecond Year\n";
+                cout<<"First Semester\n";
+                cout<<"	001201	Critical Reading and Effective Writing	            3\n";
+                cout<<"	206261	Calculus for Engineering 3	                    3\n";
+                cout<<"	261207  Basic Computer Engineering Laboratory	            2\n";
+                cout<<"	261210	Logic and Digital Circuits	                    3\n";
+                cout<<"	261212	Logic and Digital Circuits Laboratory	            1\n";
+                cout<<"	261216	Discrete Mathematics for Computer Engineers	    3\n";
+                cout<<"	261217	Data Structures for Computer Engineers              3\n";
+                cout<<"		    General Education Elective Course               3\n";
             }else if(sem == 2){
-                cout<<"\t\t\t\t Second Year Semester 2\n";
-                for(int i=0;i<sizeof(S2)/sizeof(S2[0]);i++){
-                    cout<<"\t\t"<<S1[i]<<"\n";
-                }
+                cout<<"\t\t\t\t\tSecond Year\n";
+                cout<<"Second Semester\n";
+                cout<<"	001225	English in Science and Technology Context	    3\n";
+                cout<<"	261200	Object-Oriented Programming	                    3\n";
+                cout<<"	261208  Numerical Computation for Engineers	            3\n";
+                cout<<"	261214	Microprocessor and Interfacing	                    3\n";
+                cout<<"	261215	Embedded System Laboratory	                    1\n";
+                cout<<"	261218	Algorithms for Computer Engineers	            3\n";
+                cout<<"	261332	Data and Computer Communications                    3\n";
             }else {
                 cout << "Invalid" << "\n";
             }
             break;
         case 3:
             if(sem == 1){
-            cout<<"\t\t\t\t Third Year Semester 1\n";
-            for(int i=0;i<sizeof(T1)/sizeof(T1[0]);i++){
-                cout<<"\t\t"<<T1[i]<<"\n";
-            }
+            cout<<"\t\t\t\t\tThird Year\n";
+            cout<<"First Semester\n";
+            cout<<"	261304	Computer Architecture	                        3\n";
+            cout<<"	261335	Computer Networks	                        3\n";
+            cout<<"\t261336	Computer Networks Laboratory                    1\n";
+            cout<<"	261342	Fundamentals of Database Systems                3\n";
+            cout<<"	261343	Database System Laboratory                      1\n";
+            cout<<"\t        Major Elective                                  3\n";
+            cout<<"	        Innovative Co-creator                           3\n"; 
+            cout<<"\t\t\t\t\t\t   Total\t17\n";
             }else if(sem == 2){
-                cout<<"\t\t\t\t Third Year Semester 2\n";
-                for(int i=0;i<sizeof(T2)/sizeof(T2[0]);i++){
-                    cout<<"\t\t"<<T2[i]<<"\n";
-            }
+                cout<<"\t\t\t\t\tThird Year\n";
+                cout<<"Second Semester\n";
+                cout<<"	261305 Operating Systems	                        3\n";
+                cout<<"	261306 Computer Engineering Probability and Statistics	3\n";
+                cout<<"	261361 Software Engineering	                        3\n";
+                cout<<"\t       Major Elective	                          \t3\n";
+                cout<<"\t       General Education Elective Course	        1\n";
+                cout<<"\t       Learner person	                          \t3\n";
+                cout<<"\t\t\t\t\t\t   Total\t16\n";
             }else {
                 cout << "Invalid" << "\n";
             }
             break;
         case 4:
             if(sem == 1){
-            cout<<"\t\t\t\t Fourth Year Semester 1\n";
-            for(int i=0;i<sizeof(Fo1)/sizeof(Fo1[0]);i++){
-                cout<<"\t\t"<<Fo1[i]<<"\n";
-            }
+            cout<<"\t\t\t\t\tFourth Year\n";
+            cout<<"First Semester\n";
+            cout<<"\t261491	Project Survey  \t\t\t\t\t 1" << endl;
+            cout<<"\t        Major Elective \t\t\t\t\t\t 9" << endl;
+            cout<<"\t        Free Elective  \t\t\t\t\t\t 3" << endl;
+            cout<<"\t\t\t\t\t\t\t\t Total\t 13"<<endl;
             }else if(sem == 2){
-                cout<<"\t\t\t\t Fourth Year Semester 2\n";
-                for(int i=0;i<sizeof(Fo2)/sizeof(Fo2[0]);i++){
-                    cout<<"\t\t"<<Fo2[i]<<"\n";
-                }
+                cout<<"\t\t\t\t\tFourth Year\n";
+                cout<<"First Semester\n";
+                cout<<"\t259192 Skills for Professionalism and Entrepreneurship	\t 1" << endl;
+                cout<<"\t261405 Advanced Computer Engineering Technology	\t\t 3" << endl;
+                cout<<"\t261492	CPE	492	Project	\t\t\t\t 3" << endl;
+                cout<<"\t        Major Elective \t\t\t\t\t\t 9" << endl;
+                cout<<"\t        Free Elective  \t\t\t\t\t\t 3" << endl;
+                cout<<"\t\t\t\t\t\t\t\t Total\t 13"<<endl;
             }else {
                 cout << "Invalid" << "\n";
             }

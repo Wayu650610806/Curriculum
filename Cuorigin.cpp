@@ -4,7 +4,8 @@
 #include<vector>
 #include<iomanip>
 using namespace std;
-int F1(){
+
+void F1(){
     cout<<"\t\t\t\t\tFirst Year\n";
     cout<<"First Semester\n";
     cout<<"	001101	Fundamental English 1\t\t\t\t\t\t\t\t\t3\n";
@@ -18,9 +19,9 @@ int F1(){
     cout<<"\t261103	Basic Computer Engineering\t\t\t\t\t\t\t\t3\n";
     cout<<"\t\t\t\t\t\t\t\t\t\t\t\ttotal\t21\n";
 
-    return 21;
+    // return 21;
 }
-int F2(){
+void F2(){
     cout<<"\t\t\t\t\tFirst Year\n";
     cout<<"Second Semester\n";
     cout<<"	001102	Fundamental English 2\t\t\t\t\t\t\t3\n";
@@ -32,9 +33,9 @@ int F2(){
     cout<<"\t261102	Computer Programming\t\t\t\t\t\t3\n";
     cout<<"\t\t\t\t\t\t\t\t\t\ttotal\t19\n";
     
-    return 19;
+    // return 19;
 }
-int S1(){
+void S1(){
     cout<<"\t\t\t\t\tSecond Year\n";
     cout<<"First Semester\n";
     cout<<"	001201	Critical Reading and Effective Writing	            3\n";
@@ -46,7 +47,7 @@ int S1(){
     cout<<"	261217	Data Structures for Computer Engineers              3\n";
     cout<<"		    General Education Elective Course               3\n";
 }
-int S2(){
+void S2(){
     cout<<"\t\t\t\t\tSecond Year\n";
     cout<<"Second Semester\n";
     cout<<"	001225	English in Science and Technology Context	    3\n";
