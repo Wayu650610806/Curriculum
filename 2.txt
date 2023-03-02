@@ -1,0 +1,6 @@
+001102,Fundamental English 2,3
+206162,Calculus for Engineering 2,3
+207106,Physics for Engineering and Agro-Industry Students 2,3
+207116,Physics Laboratory for Engineering and Agro-Industry Students 2,1
+252281,Fundamentals of Electronic Circuits for Information Systems and Network Engineering,3
+261102,Computer Programming,3

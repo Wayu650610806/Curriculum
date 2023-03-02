@@ -1,0 +1,7 @@
+001225,English in Science and Technology Context,3
+261200,Object-Oriented Programming,
+261208,Numerical Computation for Engineers,3
+261214,Microprocessor and Interfacing,3
+261215,Embedded System Laboratory,1
+261218,Algorithms for Computer Engineers,3
+261332,Data and Computer Communications,3
