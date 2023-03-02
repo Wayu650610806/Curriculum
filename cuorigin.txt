@@ -1,4 +1,3 @@
-F1
 001101,Fundamental English 1,3
 140104,Citizenship,3
 206161,Calculus for Engineering 1,3
@@ -47,4 +46,3 @@ Fo2
 259192,Skills for Professionalism and Entrepreneurship,1
 261405,Advanced Computer Engineering Technology,3
 261492,Project,3
-//เติมให้ครบ รูปแบบ รหัส,name,credit
