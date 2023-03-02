@@ -8,7 +8,7 @@ int Start_program(){
     int y,s;
     cout<<"\t\t\t\t\t\tCurriculum Management\n";
     cout<<"Please select\n";
-    cout<<"\t1.Show Map\n\t2.Curriculum\n";
+    cout<<"\t1.Show Map\n\t2.Curriculum\n\t3.Edit\n";
     cout<<"Input number : ";
     cin>>command;
     if(command==1) StudyMap();
@@ -19,5 +19,8 @@ int Start_program(){
         cin >> s;
         ShowCu(y,s);
     }   
+    if(command==3){
+        return 1;
+    }
     return 0;
 }
