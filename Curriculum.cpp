@@ -34,6 +34,7 @@ string ShowCu(int input,int sem){
                 cout<<"\t207116	Physics Laboratory for Engineering and Agro-Industry Students 2\t\t\t\t1\n";
                 cout<<"\t252281	Fundamentals of Electronic Circuits for Information Systems and Network Engineering\t3\n";
                 cout<<"\t261102	Computer Programming\t\t\t\t\t\t\t\t\t3\n";
+                cout<<"		    General Education Elective Course\t\t\t\t\t\t\t3\n";
                 cout<<"\t\t\t\t\t\t\t\t\t\t\t\ttotal\t19\n";
             }else{
                 cout << "Invalid" << "\n";

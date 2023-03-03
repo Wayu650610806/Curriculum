@@ -1,5 +1,0 @@
-261304,Computer Architecture,3
-261335,Computer Networks,3
-261336,Computer Networks Laboratory,1
-261342,Fundamentals of Database Systems,3
-261343,Database System Laboratory,1

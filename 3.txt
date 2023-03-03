@@ -1,7 +1,0 @@
-001201,Critical Reading and Effective Writing,3
-206261,Calculus for Engineering 3,3
-261207,Basic Computer Engineering Laboratory,2
-261210,Logic and Digital Circuits,3
-261212,Logic and Digital Circuits Laboratory,1
-261216,Discrete Mathematics for Computer Engineers,3
-261217,Data Structures for Computer Engineers,3

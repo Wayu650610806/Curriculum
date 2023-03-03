@@ -1,3 +1,0 @@
-261305,Operating Systems,3
-261306,Computer Engineering Probability and Statistics,3
-261361,Software Engineering,3
