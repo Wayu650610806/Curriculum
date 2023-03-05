@@ -89,7 +89,7 @@ string Innovative(string x){
             }
 	    if(count == -1) return 0;
 	    else{
-		return Innovative_Required_key[count]+" "+Innovative_Required_subject[count];
+		return Innovative_Required_key[count]+","+Innovative_Required_subject[count]+","+to_string(Innovative_Required_credits[count]);
 	    }
         
 }
