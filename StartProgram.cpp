@@ -31,6 +31,7 @@
 #include"StudyMap.cpp"
 #include"Curriculum.cpp"
 #include"Readfile.cpp"
+#include"Tutorial.cpp"
 using namespace std;
 
 vector<course> F1;
@@ -49,18 +50,19 @@ int Start_program(){
     vector<course> Fo1 = {};
     vector<course> Fo2 = {};
     cout<<"Please select\n";
-    cout<<"\t1.Show Map\n\t2.Curriculum\n\t3.Edit\n";
+    cout<<"\t1.Tutorial\n\t2.Show Map\n\t3.Curriculum\n\t4.Edit\n";
     cout<<"Input number : ";
     cin>>command;
-    if(command==1) StudyMap();
-    if(command==2){
+    if(command==1) Tutorial();
+    if(command==2) StudyMap();
+    if(command==3){
         cout<<"Form to input Year Semester" << endl;
         cout<<"Input Year and Semester : ";
         cin >> y;
         cin >> s;
         ShowCu(y,s);
     }   
-     if(command==3){
+     if(command==4){
         readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
         int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
         cout << "Total credit : " << total << endl;
