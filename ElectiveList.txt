@@ -1,184 +1,97 @@
 //Learner
-204100	CS	100	Information Technology and Modern Life 3(3-0-6)	
-261111	CPE	111	Internet and Online Community 3(3-0-6)	
-953111	SE	111	Software for Everyday Life 3(3-0-6)	
+204100,Information Technology and Modern Life,3
+261111,Internet and Online Community,3
+953111,Software for Everyday Life,3
 //Innovative
-013110	PSY	110	Psychology and Daily Life
-3(3-0-6)	
-050106	HUGE	106	Humanistic Arts
-3(3-0-6)	
-176100	LAGE	100	Law and Modern World
-3(3-0-6)	
-201114	SC	114	Environmental Science in Today’s World
-3(3-0-6)	
-201117	SC	117	Mathematics and Science in Civilization
-3(3-0-6)	
-201190	SC	190	Critical Thinking, Problem Solving and Science Communication
-3(3-0-6)	
-207109	PHYS	109	Life and the Universe
-3(3-0-6)	
-207110	PHYS	110	Physics : the Science that Changed the World 3(3-0-6)	
-368100	ABM	100	Starting an Agribusiness in a Changing World 3(3-0-6)	
-602201	BIOT	201	Agro-Industrial Vision 1(0-3-0)	
-610111	AG	111	Packaging for Marketing 3(3-0-6)	
-703103	MGMT	103	Introduction to Entrepreneurship and Business 3(3-0-6)	
-751100	ECON	100	Economics for Everyday Life 3(3-0-6)	
-851103	MC	103	Life and Society through Media 3(3-0-6)	
-852100	DF	100	Introduction to Film 3(3-0-6)
+013110,Psychology and Daily Life,3
+050106,Humanistic Arts,3
+176100,Law and Modern World,3
+201114,Environmental Science in Today’s World,3
+201117,Mathematics and Science in Civilization,3
+201190,Critical Thinking, Problem Solving and Science Communication,3
+207109,Life and the Universe,3
+207110,Physics : the Science that Changed the World,3
+368100,Starting an Agribusiness in a Changing World,3
+602201,Agro-Industrial Vision,1
+610111,Packaging for Marketing,3
+703103,Introduction to Entrepreneurship and Business,3
+751100,Economics for Everyday Life,3
+851103,Life and Society through Media,3
+852100,Introduction to Film,3
 //GE	
-201100	SC	100	Integrated Science
-
-3(3-0-6)	
-203100	CHEM	100	Chemistry in Everyday Life
-3(3-0-6)	
-211100	BCT	100	Eating Well : Better Living and Disease Prevention
-3(3-0-6)	
-462130	PHPC	130	Medications in Everyday Life
-3(3-0-6)	
-571116	NGGE	116	Health and Working in the Digital Age
-3(3-0-6)	
-701181	ACC	181	Accounting for Non Accountants
-3(3-0-6)	
-702101	FINA	101	Finance for Daily Life
-3(3-0-6)	
-705191	MKTG	191	Smart Consumer
-1(1-0-2)	
-
-259194	ENGR	194	Characteristics and Values for Being a Professional Entrepreneur
-
-1(0-3-1)	
-
-011100	PHIL	100	Man and Philosophy
-
-3(3-0-6)	
-109114	FAGE	114	Art in Everyday Life
-3(3-0-6)	
-127100	GOV	100	Politics in Everyday Life
-3(3-0-6)	
-128100	PA	100	Basic Good Governance in Administration
-3(3-0-6)	
-154104	GEO	104	Environmental Conservation
-3(3-0-6)	
-254182	ME	182	Introduction to Energy
-3(3-0-6)	
-256131	MN	131	Urban Mining
-3(3-0-6)	
-259108	ENGR	108	Electricity in Everyday Life
-3(3-0-6)	
-259193	ENGR	193	Morality and Intelligence for Being a Professional
-1(0-3-1)	
-259195	ENGR	195	Managing Activities for Development
-1(0-3-1)	
-602102	BIOT	102	Life and Alternative Energy
-3(3-0-6)	
-801100	ARCT	100	Architecture in Everyday Life
-3(3-0-6)	
-951100	ANI	100	Modern Life and Animation
-3(3-0-6)	
+201100,Integrated Science,3
+203100,Chemistry in Everyday Life,3
+211100,Eating Well : Better Living and Disease Prevention,3
+462130,Medications in Everyday Life,3
+571116,Health and Working in the Digital Age,3
+701181,Accounting for Non Accountants,3
+702101,Finance for Daily Life,3
+705191,Smart Consumer,1
+259194,Characteristics and Values for Being a Professional Entrepreneur,1
+011100,Man and Philosophy,3
+109114,Art in Everyday Life,3
+127100,Politics in Everyday Life,3
+128100,Basic Good Governance in Administration,3
+154104,Environmental Conservation,3
+254182,Introduction to Energy,3
+256131,Urban Mining,3
+259108,Electricity in Everyday Life,3	
+259193,Morality and Intelligence for Being a Professional,1
+259195,Managing Activities for Development,1
+602102,Life and Alternative Energy,3
+801100,Architecture in Everyday Life,3
+951100,Modern Life and Animation,3
 //Major
-261404	CPE	404	Advanced Computer Engineering Laboratory
-2(0-6-0)	
-261406	CPE	406	Basic Compiler Design
-3(3-0-6)	
-261407	CPE	407	Fundamentals of Computation for Computer Engineers
-3(3-0-6)	
-261408	CPE	408	Quantum Computation
-3(3-0-6)	
-261409	CPE	409	Functional Programming
-3(3-0-6)	
-261411	CPE	411	Parallel Processing and Distributed Systems
-3(3-0-6)	
-261414	CPE	414	Digital System Design
-3(3-0-6)	
-261421	CPE	421	Computer Hardware Design
-3(3-0-6)	
-261424	CPE	424	Remote Monitoring and Control Systems
-3(3-0-6)	
-261430	CPE	430	Wireless Networks
-3(3-0-6)	
-261433	CPE	433	Network Programming
-3(3-0-6)	
-261434	CPE	434	Computer Network Design and Management
-3(3-0-6)	
-261435	CPE	435	Broadband Communication Networks
-3(3-0-6)	
-261437	CPE	437	Fundamentals of Queueing Theory for Computer Engineers
-3(3-0-6)	
-261438	CPE	438	Fundamentals of Multiprotocol Label Switching
-3(3-0-6)	
-261439	CPE	439	Wireless Communications for Computer Engineering
-3(3-0-6)	
-261441	CPE	441	Internet of Things and Big Data
-3(3-0-6)	
-261444	CPE	444	Advanced Database Systems
-3(3-0-6)	
-261446	CPE	446	Information Systems
-3(3-0-6)	
-261447	CPE	447	Network and Information Security
-3(3-0-6)	
-261448	CPE	448	Data Mining for Computer Engineering
-3(3-0-6)	
-261449	CPE	449	Software Testing for Computer Engineering
-3(3-0-6)	
-261453	CPE	453	Digital Image Processing
-3(3-0-6)	
-261456	CPE	456	Introduction to Computational Intelligence for Computer Engineering
-3(3-0-6)	
-261457	CPE	457	Digital Image and Video Compression
-3(3-0-6)	
-261458	CPE	458	Machine Vision
-3(3-0-6)	
-261459	CPE	459	Deep Learning
-3(3-0-6)	
-261461	CPE	461	Visual and Interactive Programming
-3(3-0-6)	
-261465	CPE	465	Computer Graphics
-3(3-0-6)	
-261468	CPE	468	System Analysis and Design for Computer Engineering
-3(3-0-6)	
-261469	CPE	469	Software Project Management for Computer Engineering
-3(3-0-6)	
-261470	CPE	470	Signals and Systems
-3(3-0-6)	
-261471	CPE	471	Advanced Digital Signal Processing
-3(3-0-6)	
-261472	CPE	472	Robotics
-3(3-0-6)	
-261473	CPE	473	Computer - Aided Manufacturing
-3(3-0-6)	
-261475	CPE	475	Modeling and Optimization for Big Data Analytics
-3(3-0-6)	
-261476	CPE	476	Biomedical Instruments
-3(3-0-6)	
-261478	CPE	478	Principles of Control Systems
-3(3-0-6)	
-261479	CPE	479	Bioinformatics Programming
-3(3-0-6)	
-261493	CPE	493	Seminar
-3(3-0-6)	
-261494	CPE	494	Selected Topics in Computer Engineering
-3(3-0-6)	
-261497	CPE	497	Selected Topics in Computer Software
-3(3-0-6)	
-261498	CPE	498	Selected Topics in Computer Networks
-3(3-0-6)	
-261499	CPE	499	Selected Topics in Computational Intelligence
-3(3-0-6)	
-269421	ISNE	421	Computer Network Traffic Analysis
-3(3-0-6)	
-269430	ISNE	430	Wireless And Broadband Computer Networks
-3(3-0-6)	
-269431	ISNE	431	Wireless Sensor Network
-3(3-0-6)	
-269432	ISNE	432	Peer-to-Peer Systems
-3(3-0-6)	
-269433	ISNE	433	Computer Network Routing Protocols
-3(3-0-6)	
-269441	ISNE	441	Information Retrieval and Extraction
-3(3-0-6)	
-269461	ISNE	461	Personal Software Process Improvement
-3(3-0-6)	
-269462	ISNE	462	Introduction to Human-Computer Interaction
-3(3-0-6)	
-261400	CPE	400	Computer Engineering Training
-3(0-18-0)
+261404,Advanced Computer Engineering Laboratory,2	
+261406,Basic Compiler Design,3	
+261407,Fundamentals of Computation for Computer Engineers,3
+261408,Quantum Computation,3
+261409,Functional Programming,3
+261411,Parallel Processing and Distributed Systems,3
+261414,Digital System Design,3
+261421,Computer Hardware Design,3
+261424,Remote Monitoring and Control Systems,3
+261430,Wireless Networks,3
+261433,Network Programming,3
+261434,Computer Network Design and Management,3
+261435,Broadband Communication Networks,3
+261437,Fundamentals of Queueing Theory for Computer Engineers,3
+261438,Fundamentals of Multiprotocol Label Switching,3
+261439,Wireless Communications for Computer Engineering,3
+261441,Internet of Things and Big Data,3
+261444,Advanced Database Systems,3
+261446,Information Systems,3
+261447,Network and Information Security,3
+261448,Data Mining for Computer Engineering,3
+261449,Software Testing for Computer Engineering,3
+261453,Digital Image Processing,3
+261456,Introduction to Computational Intelligence for Computer Engineering,3
+261457,Digital Image and Video Compression,3
+261458,Machine Vision,3
+261459,Deep Learning,3
+261461,Visual and Interactive Programming,3
+261465,Computer Graphics,3
+261468,System Analysis and Design for Computer Engineering,3
+261469,Software Project Management for Computer Engineering,3
+261470,Signals and Systems,3
+261471,Advanced Digital Signal Processing,3
+261472,Robotics,3
+261473,Computer - Aided Manufacturing,3
+261475,Modeling and Optimization for Big Data Analytics,3
+261476,Biomedical Instruments,3
+261478,Principles of Control Systems,3
+261479,Bioinformatics Programming,3
+261493,Seminar,3
+261494,Selected Topics in Computer Engineering,3
+261497,Selected Topics in Computer Software,3
+261498,Selected Topics in Computer Networks,3
+261499,Selected Topics in Computational Intelligence,3	
+269421,Computer Network Traffic Analysis,3
+269430,Wireless And Broadband Computer Networks,3
+269431,Wireless Sensor Network,3
+269432,Peer-to-Peer Systems,3
+269433,Computer Network Routing Protocols,3
+269441,Information Retrieval and Extraction,3
+269461,Personal Software Process Improvement,3	
+269462,Introduction to Human-Computer Interaction,3
+261400,Computer Engineering Training,3
