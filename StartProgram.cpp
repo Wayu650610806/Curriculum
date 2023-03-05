@@ -39,9 +39,10 @@ int Start_program(){
      if(command==4){
         readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
         cout<<"\nFirst, you have to select all ejective courses\n";
-        // int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
-        // cout << "\nTotal credit : " << total << endl<<endl;
+        
         firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+        int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
+        cout << "\nTotal credit : " << total << endl<<endl;
     }
     cout << "\nWant to select a function again? \x1b[1mY\x1b[0m/\x1b[1mN\x1b[0m : ";
     cin >> again;
