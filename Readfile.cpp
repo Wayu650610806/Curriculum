@@ -3,7 +3,7 @@
 #include<fstream>
 #include<vector>
 #include<iomanip>
-
+#include"ElectiveList.cpp"
 using namespace std;
 struct course{
 	char name[100];
@@ -12,6 +12,8 @@ struct course{
 };
 int printreport(vector<course> F1,vector<course> F2,vector<course> S1,vector<course>S2,vector<course> T1,vector<course> T2,vector<course> Fo1,vector<course> Fo2){
 	int credit = 0;
+	course s;
+	string input;
 	cout<<"\t\t\t\t" << "First year 1st Semester" << endl;
 	for(unsigned int i = 0;i < F1.size()-1; i++){
 		cout<<F1[i].credit<<" "<< F1[i].name << " ("<< F1[i].code << ")"<<"\n";
@@ -20,39 +22,58 @@ int printreport(vector<course> F1,vector<course> F2,vector<course> S1,vector<cou
 	cout<<"\t\t\t\t" << "First year 2nd Semester" << endl;
 	for(unsigned int i = 0;i < F2.size()-1; i++){
 		cout<<F2[i].credit<<" "<< F2[i].name << " ("<< F2[i].code << ")"<<"\n";
+    }
+	//cout elective list;
+			cout<<"Please select General Education course\n";
+			cout<<"Input General Education's code that you want to select :";
+			cin>>input;
+		string text=GE(input);
+		while(text=="0"){
+			cout<<"Not found\n";
+			cout<<"Please select General Education course\n";
+			cout<<"Input General Education's code that you want to select :";
+			cin>>input;
+			text=GE(input);
+		}
+		char format[]="%[^,],%[^,],%d";
+		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
+		F2.insert(F2.begin()+(F2.size()-1),s);	
+	cout<<"\t\t\t\t" << "First year 2nd Semester" << endl;
+	for(unsigned int i = 0;i < F2.size()-1; i++){
+		cout<<F2[i].credit<<" "<< F2[i].name << " ("<< F2[i].code << ")"<<"\n";
 		credit = credit + F2[i].credit;
     }
-	cout<<"\t\t\t\t" << "Second year 1st Semester" << endl;
-	for(unsigned int i = 0;i < S1.size()-1; i++){
-		cout<<S1[i].credit<<" "<< S1[i].name << " ("<< S1[i].code << ")"<<"\n";
-		credit = credit + S1[i].credit;
-    }
-	cout<<"\t\t\t\t" << "Second year 2nd Semester" << endl;
-	for(unsigned int i = 0;i < S2.size()-1; i++){
-		cout<<S2[i].credit<<" "<< S2[i].name << " ("<< S2[i].code << ")"<<"\n";
-		credit = credit + S2[i].credit;
-    }
-	cout<<"\t\t\t\t" << "Third year 1st Semester" << endl;
-	for(unsigned int i = 0;i < T1.size()-1; i++){
-		cout<<T1[i].credit<<" "<< T1[i].name << " ("<< T1[i].code << ")"<<"\n";
-		credit = credit + T1[i].credit;
-    }
-	cout<<"\t\t\t\t" << "Third year 2nd Semester" << endl;
-	for(unsigned int i = 0;i < T2.size()-1; i++){
-		cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
-		credit = credit + T2[i].credit;
-    }
-	cout<<"\t\t\t\t" << "Forth year 1st Semester" << endl;
-	for(unsigned int i = 0;i < Fo1.size()-1; i++){
-		cout<<Fo1[i].credit<<" "<< Fo1[i].name << " ("<< Fo1[i].code << ")"<<"\n";
-		credit = credit + Fo1[i].credit;
-    }
-	cout<<"\t\t\t\t" << "Forth year 2nd Semester" << endl;
-	for(unsigned int i = 0;i < Fo2.size(); i++){
-		cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
-		credit = credit + Fo2[i].credit;
-    }
-	return credit;
+	// cout<<"\t\t\t\t" << "Second year 1st Semester" << endl;
+	// for(unsigned int i = 0;i < S1.size()-1; i++){
+	// 	cout<<S1[i].credit<<" "<< S1[i].name << " ("<< S1[i].code << ")"<<"\n";
+	// 	credit = credit + S1[i].credit;
+    // }
+	// cout<<"\t\t\t\t" << "Second year 2nd Semester" << endl;
+	// for(unsigned int i = 0;i < S2.size()-1; i++){
+	// 	cout<<S2[i].credit<<" "<< S2[i].name << " ("<< S2[i].code << ")"<<"\n";
+	// 	credit = credit + S2[i].credit;
+    // }
+	// cout<<"\t\t\t\t" << "Third year 1st Semester" << endl;
+	// for(unsigned int i = 0;i < T1.size()-1; i++){
+	// 	cout<<T1[i].credit<<" "<< T1[i].name << " ("<< T1[i].code << ")"<<"\n";
+	// 	credit = credit + T1[i].credit;
+    // }
+	// cout<<"\t\t\t\t" << "Third year 2nd Semester" << endl;
+	// for(unsigned int i = 0;i < T2.size()-1; i++){
+	// 	cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
+	// 	credit = credit + T2[i].credit;
+    // }
+	// cout<<"\t\t\t\t" << "Forth year 1st Semester" << endl;
+	// for(unsigned int i = 0;i < Fo1.size()-1; i++){
+	// 	cout<<Fo1[i].credit<<" "<< Fo1[i].name << " ("<< Fo1[i].code << ")"<<"\n";
+	// 	credit = credit + Fo1[i].credit;
+    // }
+	// cout<<"\t\t\t\t" << "Forth year 2nd Semester" << endl;
+	// for(unsigned int i = 0;i < Fo2.size(); i++){
+	// 	cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
+	// 	credit = credit + Fo2[i].credit;
+    // }
+	// return credit;
 }
 void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2){
     ifstream file("cuorigin.txt");
