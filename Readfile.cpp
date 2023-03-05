@@ -3,18 +3,64 @@
 #include<fstream>
 #include<vector>
 #include<iomanip>
-#include"ElectiveList.cpp"
 using namespace std;
 struct course{
 	char name[100];
 	char code[100];
 	int credit;
 };
-void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2){
+
+void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2,vector<course> &GE,vector<course> &LP,vector<course> &IC,vector<course> &MJ){
     ifstream file("cuorigin.txt");
-	string textline;
-	int y = 0 ,s = 0,state = 1;
-	int i = 0;
+	ifstream file2("ElectiveList.txt");
+	string textline,textline2;
+	int y = 0 ,s = 0,state = 1,state2 = 1;
+	int i = 0,j=0;
+	while(getline(file2,textline2)){
+		if(state2 == 1){
+			if(textline2 == "IC"){ 
+				state2 =2;
+				}
+			course s;
+			char format[]="%[^,],%[^,],%d";
+			sscanf(textline2.c_str(),format,s.code,s.name,&s.credit);
+			//Use sscanf() to split the values in textline and assign those values to the members of struct s;
+			LP.push_back(s);
+		}
+		if(state2 == 2){
+			if(textline2 == "GE"){ 
+				state2 = 3;
+				}
+			if(textline2 == "IC") j = 1; 
+			if(textline2 == "IC" || j != 1) continue;
+			course s;
+			char format[]="%[^,],%[^,],%d";
+			sscanf(textline2.c_str(),format,s.code,s.name,&s.credit);
+			//Use sscanf() to split the values in textline and assign those values to the members of struct s;
+			IC.push_back(s); 	
+		}
+		if(state2 == 3){
+			if(textline2 == "MJ"){ 
+				state2 = 4;
+				}
+			if(textline2 == "GE") j = 1; 
+			if(textline2 == "GE" || j != 1) continue;
+			course s;
+			char format[]="%[^,],%[^,],%d";
+			sscanf(textline2.c_str(),format,s.code,s.name,&s.credit);
+			//Use sscanf() to split the values in textline and assign those values to the members of struct s;
+			GE.push_back(s); 	
+		}
+		if(state2 == 4){
+			if(textline2 == "MJ") j = 1; 
+			if(textline2 == "MJ" || j != 1) continue;
+			course s;
+			char format[]="%[^,],%[^,],%d";
+			sscanf(textline2.c_str(),format,s.code,s.name,&s.credit);
+			//Use sscanf() to split the values in textline and assign those values to the members of struct s;
+			MJ.push_back(s); 	
+		}
+	}
 	while(getline(file,textline)){
 		if(state == 1){
 			if(textline == "F2"){ 
@@ -109,221 +155,49 @@ void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<co
 		}
 	}
 }
+
 int printreport(vector<course> F1,vector<course> F2,vector<course> S1,vector<course>S2,vector<course> T1,vector<course> T2,vector<course> Fo1,vector<course> Fo2){
 	int credit = 0;
-	course s;
-	string input,text;
-	char format[]="%[^,],%[^,],%d";
-	cout<<"\t\t\t\t" << "First year 1st Semester" << endl;
+	cout<<"\n\t\t\t\t" << "First year 1st Semester" << endl;
 	for(unsigned int i = 0;i < F1.size()-1; i++){
 		cout<<F1[i].credit<<" "<< F1[i].name << " ("<< F1[i].code << ")"<<"\n";
 		credit = credit + F1[i].credit;
     }
-	cout<<"\t\t\t\t" << "First year 2nd Semester" << endl;
-	for(unsigned int i = 0;i < F2.size()-1; i++){
-		cout<<F2[i].credit<<" "<< F2[i].name << " ("<< F2[i].code << ")"<<"\n";
-    }
-	//cout elective list;
-			cout<<"\t\tPlease select General Education course\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=GE(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"Please select General Education course\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=GE(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		F2.insert(F2.begin()+(F2.size()-1),s);	
-	cout<<"\t\t\t\t" << "First year 2nd Semester" << endl;
+	cout<<"\n\t\t\t\t" << "First year 2nd Semester" << endl;
 	for(unsigned int i = 0;i < F2.size()-1; i++){
 		cout<<F2[i].credit<<" "<< F2[i].name << " ("<< F2[i].code << ")"<<"\n";
 		credit = credit + F2[i].credit;
     }
-	cout<<"\t\t\t\t" << "Second year 1st Semester" << endl;
-	for(unsigned int i = 0;i < S1.size()-1; i++){
-		cout<<S1[i].credit<<" "<< S1[i].name << " ("<< S1[i].code << ")"<<"\n";
-    }
-		cout<<"\t\tPlease select General Education course\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-		text=GE(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"Please select General Education course\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=GE(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		S1.insert(S1.begin()+(S1.size()-1),s);	
-	cout<<"\t\t\t\t" << "Second year 1st Semester" << endl;
+	cout<<"\n\t\t\t\t" << "Second year 1st Semester" << endl;
 	for(unsigned int i = 0;i < S1.size()-1; i++){
 		cout<<S1[i].credit<<" "<< S1[i].name << " ("<< S1[i].code << ")"<<"\n";
 		credit = credit + S1[i].credit;
     }
-
-	cout<<"\t\t\t\t" << "Second year 2nd Semester" << endl;
+	cout<<"\n\t\t\t\t" << "Second year 2nd Semester" << endl;
 	for(unsigned int i = 0;i < S2.size()-1; i++){
 		cout<<S2[i].credit<<" "<< S2[i].name << " ("<< S2[i].code << ")"<<"\n";
 		credit = credit + S2[i].credit;
     }
-	cout<<"\t\t\t\t" << "Third year 1st Semester" << endl;
-	for(unsigned int i = 0;i < T1.size()-1; i++){
-		cout<<T1[i].credit<<" "<< T1[i].name << " ("<< T1[i].code << ")"<<"\n";
-    }
-		cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=MajorElec(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=MajorElec(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		T1.insert(T1.begin()+(T1.size()-1),s);	
-
-		cout<<"\t\tPlease select Innovative Co-creator\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-		text=Innovative(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"\t\tPlease select Innovative Co-creator\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=Innovative(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		T1.insert(T1.begin()+(T1.size()-1),s);		
-	cout<<"\t\t\t\t" << "Third year 1st Semester" << endl;
+	cout<<"\n\t\t\t\t" << "Third year 1st Semester" << endl;
 	for(unsigned int i = 0;i < T1.size()-1; i++){
 		cout<<T1[i].credit<<" "<< T1[i].name << " ("<< T1[i].code << ")"<<"\n";
 		credit = credit + T1[i].credit;
     }
-	cout<<"\t\t\t\t" << "Third year 2nd Semester" << endl;
-	for(unsigned int i = 0;i < T2.size()-1; i++){
-		cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
-		
-    }
-		cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=MajorElec(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=MajorElec(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		T2.insert(T2.begin()+(T2.size()-1),s);		
-
-		cout<<"\t\tPlease select General Education\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=GE(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"Please select General Education course\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=GE(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		T2.insert(T2.begin()+(T2.size()-1),s);	
-
-		cout<<"\t\tPlease select Learner person\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=Learner(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"\t\tPlease select Learner person\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=Learner(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		T2.insert(T2.begin()+(T2.size()-1),s);	
-	cout<<"\t\t\t\t" << "Third year 2nd Semester" << endl;
+	cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 	for(unsigned int i = 0;i < T2.size()-1; i++){
 		cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
 		credit = credit + T2[i].credit;
     }
-	cout<<"\t\t\t\t" << "Forth year 1st Semester" << endl;
-	for(unsigned int i = 0;i < Fo1.size()-1; i++){
-		cout<<Fo1[i].credit<<" "<< Fo1[i].name << " ("<< Fo1[i].code << ")"<<"\n";
-    }
-	cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=MajorElec(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=MajorElec(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		Fo1.insert(Fo1.begin()+(Fo1.size()-1),s);	
-	// cout<<"\t\tPlease select Free Elective\n";
-	// 		cout<<"Input code that you want to select : ";
-	// 		cin>>input;
-	// 		text=MajorElec(input);
-	// 	while(text=="0"){
-	// 		cout<<"Not found\n";
-	// 		cout<<"\t\tPlease select Major elective\n";
-	// 		cout<<"Input General Education's code that you want to select :";
-	// 		cin>>input;
-	// 		text=MajorElec(input);
-	// 	}
-	// 	sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-	// 	Fo1.insert(Fo1.begin()+(Fo1.size()-1),s);
-	cout<<"\t\t\t\t" << "Forth year 1st Semester" << endl;
+	cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 	for(unsigned int i = 0;i < Fo1.size()-1; i++){
 		cout<<Fo1[i].credit<<" "<< Fo1[i].name << " ("<< Fo1[i].code << ")"<<"\n";
 		credit = credit + Fo1[i].credit;
     }
-		cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input code that you want to select : ";
-			cin>>input;
-			text=MajorElec(input);
-		while(text=="0"){
-			cout<<"Not found\n";
-			cout<<"\t\tPlease select Major elective\n";
-			cout<<"Input General Education's code that you want to select :";
-			cin>>input;
-			text=MajorElec(input);
-		}
-		sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-		Fo2.insert(Fo2.begin()+(Fo2.size()-1),s);	
-	// cout<<"\t\tPlease select Free Elective\n";
-	// 		cout<<"Input code that you want to select : ";
-	// 		cin>>input;
-	// 		text=MajorElec(input);
-	// 	while(text=="0"){
-	// 		cout<<"Not found\n";
-	// 		cout<<"\t\tPlease select Major elective\n";
-	// 		cout<<"Input General Education's code that you want to select :";
-	// 		cin>>input;
-	// 		text=MajorElec(input);
-	// 	}
-	// 	sscanf(text.c_str(),format,s.code,s.name,&s.credit);	
-	// 	Fo2.insert(Fo2.begin()+(Fo2.size()-1),s);
-	cout<<"\t\t\t\t" << "Forth year 2nd Semester" << endl;
+	cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 	for(unsigned int i = 0;i < Fo2.size(); i++){
 		cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
-    }
-
-	cout<<"\t\t\t\t" << "Forth year 2nd Semester" << endl;
+	}
+	cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 	for(unsigned int i = 0;i < Fo2.size(); i++){
 		cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
 		credit = credit + Fo2[i].credit;

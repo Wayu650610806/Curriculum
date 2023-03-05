@@ -1,39 +1,9 @@
-// #include<iostream>
-// #include"StudyMap.cpp"
-// #include"Curriculum.cpp"
-// #include"Edit.cpp"
-// using namespace std;
-// vector<course> F1;
-// int Start_program(){
-//     int command=0;
-//     int y,s;
-//     cout<<"\t\t\t\t\t\tCurriculum Management\n";
-//     cout<<"Please select\n";
-//     cout<<"\t1.Show Map\n\t2.Curriculum\n\t3.Edit\n";
-//     cout<<"Input number : ";
-//     cin>>command;
-//     if(command==1) StudyMap();
-//     if(command==2){
-//         cout<<"Form to input Year Semester" << endl;
-//         cout<<"Input Year and Semester : ";
-//         cin >> y;
-//         cin >> s;
-//         ShowCu(y,s);
-//     }   
-//     if(command==3){
-//         readfile(F1);
-//         int total = printreport(F1);
-//         cout << "Total credit : " << total << endl;
-//     }
-//     return 0;
-// }
 #include<iostream>
 #include"StudyMap.cpp"
 #include"Curriculum.cpp"
-#include"Readfile.cpp"
+#include"FirstEdit.cpp"
 #include"Tutorial.cpp"
 using namespace std;
-
 vector<course> F1;
 int Start_program(){
     int command=0;
@@ -49,6 +19,10 @@ int Start_program(){
     vector<course> T2 = {};
     vector<course> Fo1 = {};
     vector<course> Fo2 = {};
+    vector<course> GE = {};
+    vector<course> LP = {};
+    vector<course> IC = {};
+    vector<course> MJ = {};
     cout<<"Please select\n";
     cout<<"\t1.Tutorial\n\t2.Show Map\n\t3.Curriculum\n\t4.Edit\n";
     cout<<"Input number : ";
@@ -63,9 +37,11 @@ int Start_program(){
         ShowCu(y,s);
     }   
      if(command==4){
-        readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
-        int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
-        cout << "Total credit : " << total << endl;
+        readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+        cout<<"\nFirst, you have to select all ejective courses\n";
+        // int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
+        // cout << "\nTotal credit : " << total << endl<<endl;
+        firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
     }
     cout << "\nWant to select a function again? \x1b[1mY\x1b[0m/\x1b[1mN\x1b[0m : ";
     cin >> again;

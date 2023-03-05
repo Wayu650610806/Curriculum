@@ -1,8 +1,7 @@
-//Learner
 204100,Information Technology and Modern Life,3
 261111,Internet and Online Community,3
 953111,Software for Everyday Life,3
-//Innovative
+IC
 013110,Psychology and Daily Life,3
 050106,Humanistic Arts,3
 176100,Law and Modern World,3
@@ -18,7 +17,7 @@
 751100,Economics for Everyday Life,3
 851103,Life and Society through Media,3
 852100,Introduction to Film,3
-//GE	
+GE
 201100,Integrated Science,3
 203100,Chemistry in Everyday Life,3
 211100,Eating Well : Better Living and Disease Prevention,3
@@ -41,7 +40,7 @@
 602102,Life and Alternative Energy,3
 801100,Architecture in Everyday Life,3
 951100,Modern Life and Animation,3
-//Major
+MJ
 261404,Advanced Computer Engineering Laboratory,2	
 261406,Basic Compiler Design,3	
 261407,Fundamentals of Computation for Computer Engineers,3
