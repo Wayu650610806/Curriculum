@@ -15,7 +15,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 					cout<<F2[i].credit<<" "<< F2[i].name << " ("<< F2[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "General Education Elective Courses" << endl;
 				for(unsigned int i = 0;i < GE.size()-1; i++){
 					cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
@@ -45,7 +45,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 					cout<<S1[i].credit<<" "<< S1[i].name << " ("<< S1[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "General Education Elective Courses" << endl;
 				for(unsigned int i = 0;i < GE.size()-1; i++){
 					cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
@@ -74,7 +74,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 					cout<<T1[i].credit<<" "<< T1[i].name << " ("<< T1[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "Major Elective Courses" << endl;
 				for(unsigned int i = 0;i < MJ.size()-1; i++){
 					cout<<MJ[i].credit<<" "<< MJ[i].name << " ("<< MJ[i].code << ")"<<"\n";
@@ -102,7 +102,7 @@ while(state==a){
 					cout<<T1[i].credit<<" "<< T1[i].name << " ("<< T1[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "Innovative Co-creator course" << endl;
 				for(unsigned int i = 0;i < IC.size()-1; i++){
 					cout<<IC[i].credit<<" "<< IC[i].name << " ("<< IC[i].code << ")"<<"\n";
@@ -131,7 +131,7 @@ cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 					cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "Major Elective Courses" << endl;
 				for(unsigned int i = 0;i < MJ.size()-1; i++){
 					cout<<MJ[i].credit<<" "<< MJ[i].name << " ("<< MJ[i].code << ")"<<"\n";
@@ -159,7 +159,7 @@ while(state==a){
 					cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "General Education Elective Courses" << endl;
 				for(unsigned int i = 0;i < GE.size()-1; i++){
 					cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
@@ -187,7 +187,7 @@ while(state==a){
 					cout<<T2[i].credit<<" "<< T2[i].name << " ("<< T2[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "Learner person Courses" << endl;
 				for(unsigned int i = 0;i < LP.size()-1; i++){
 					cout<<LP[i].credit<<" "<< LP[i].name << " ("<< LP[i].code << ")"<<"\n";
@@ -216,7 +216,7 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 					cout<<Fo1[i].credit<<" "<< Fo1[i].name << " ("<< Fo1[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "Major Elective Courses" << endl;
 				for(unsigned int i = 0;i < MJ.size()-1; i++){
 					cout<<MJ[i].credit<<" "<< MJ[i].name << " ("<< MJ[i].code << ")"<<"\n";
@@ -264,7 +264,7 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 					cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
 				}
 			}
-			if(input=="2"){
+			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "Major Elective Courses" << endl;
 				for(unsigned int i = 0;i < MJ.size()-1; i++){
 					cout<<MJ[i].credit<<" "<< MJ[i].name << " ("<< MJ[i].code << ")"<<"\n";
