@@ -94,3 +94,163 @@ MJ
 269461,Personal Software Process Improvement,3	
 269462,Introduction to Human-Computer Interaction,3
 261400,Computer Engineering Training,3
+Free
+001210,Oral Experrion 1,3
+003191,German for Beginners 1,3
+006103,Home and Community,3
+006115,Clothing Construction 1,3
+006341,Principles of Human Relations,3
+008220,Introduction to Hotel Industry,3
+009103,Information Literacy and Information Presentation,3
+011100,Man and philosophy,3
+011101,Meaning of Life,3
+011153,Introduction to Philosophy,3
+011155,Philosophy of Happiness,3
+011157,Social Philosophy,3
+011251,Logic,3
+011257,Ethics,3
+011269,Philosophy of Sufficiency Economy,3
+011278,Philosophy in Film,3
+012100,Mind Development for High Quality of Life,3
+012200,Mind Volunteer,3
+012374,Christianity,3
+013103,General Psychology,3
+013110,Psychology and Daily Life,3
+013217,Psychology of Love,3
+015101,Beginning Pali 1,3
+017101,Beginning Hindi 1,3
+017111,Hindi Conversation 1,3
+018111,Basic Japanese 1,3
+018131,Japanese Language and Culture 1,3
+019101,Beginning Chinese 1,3
+019105,Chinese in Daily Life 1,3
+020101,Fundamental Burmese 1,3
+021101,Spanish 1,3
+026101,Korean 1,3
+030101,Fundamental Vietnamese 1,3
+030111,Vietnamese Society and Culture,3
+050100,Usage of the Thai Language,3
+050103,Thai Society and Culture,3
+050104,Man and the Modern World,3
+050111,Man and Quest for Knowledge,3
+050112,Reading and Literary World,3
+051302,Principles of Educational Administration,3
+051304,Administration and Management Educational Institution,3
+057121,Football for Life and Exercise,1
+057122,Swimming for Life and Educational,1
+057123,Volleyball for Life and Educational,1
+057125,Rhythmic Activities for Life and Exercise,1
+057128,Tennis for Life and Educational,1
+057129,Table Tennis Life and Educational,1
+057130,Golf for Life and Exercise,3
+057132,Happy Life in Camping,3
+057133,Recreation for Quality of Life,3
+057137,Sports for Health,3
+057138,Thai Wisdom Sports for Self-Defense,3
+057139,Sport and Adventure Tourism,3
+057213,Introduction to Physical Education,2
+057305,Children Activities,2
+057411,Sport and Exercise Nutrition,2
+061309,Relief Sculpture for Art Education,3
+061312,Printing from Various Materials for Art Education,3
+064424,Astrinomical Instruction,3
+070100,English Sign Language 1,3
+070414,Introduction to Reading and Writing Braille,3
+071416,Man and Environment and Sustainable Development,3
+074100,Nutrition for Promotion of Health,3
+074101,Promoting of Health in Everydey Life,3
+076427,Office Work Practice,3
+078444,Special Lecture,3
+078454,Ways of Life and Natural Agriculture,3
+100207,Teachimg Profession and Teacherness,3
+103262,Vocal and Chorus,3
+103271,music Appreciation,3
+109100,Man and Art,3
+103115,Life and Aesthetics,3
+103119,Lanna Art Appreciation,3
+126101,Introduction to International Relations,3
+127100,Politics in Everyday Life,3
+128100,Basic Good Governance in Administration,3
+140103,Anti-Corruption in Thailand,3
+140104,Citizenship,3
+154104,Environmental Conservation,3
+154153,Disaster in Modern World,3
+159100,Modern World in Everyday Life,3
+168100,Gender and Society,3
+175335,Dynamism of Highland Ethnic Communities,3
+176100,Law and Modern World,3
+176101,Introduction to Law,3
+201100,Integrated Science,3
+201110,Integrated Mathematical Science,3
+201111,The World of Science,3
+201114,Environmental Science in Today’s World
+201115,Life and Energy,3
+201116,Science and Global Warming,3
+201117,Mathematics and Science in Civilization,3
+201190,Critical Thinking Problem Solving and Science Communication,3
+202101,Basic Biology 1,3
+203100,Chemistry in Everyday Life,3
+203192,Polymers in Everyday Life,3
+204100,Information Technology and Modern Life,3
+204123,Introduction to Data Science,3
+204320,Database Management,3
+205100,The Earth and its Geological Processes,3
+205105,Earth Science and Civilization,3
+206100,Mathematics in Everyday Life,3
+206171,General Mathematics 1,3
+206217,Fundamental Concepts of Mathematics,3
+206266,Mathematics for Everyday Life,3
+207109,Life and the Universe,3
+208101,Statistics for Everyday Life and Work,3
+211100,Eating Well : Better Living and Disease Prevention,3
+218100,The Science of gemstone and jewelry,3
+254182,Introduction to Energy,3
+256100,Sustainable Use of Mineral Resources,3
+259108,Electricity in Everyday Life,3
+259109,Telecommunication in Thailand,3
+261111,Internet and Online Community,3
+261112,Game Appreciation,3
+261113,Introduction to Interactive Pixels,3
+351100,Agricultural Economics Based on Sufficiency Economy,3
+352103,General Agriculture,3
+352422,Agro-Tourism Management,3
+353100,Thai Rice,3
+356100,Animals World,3
+356101,Animals for Recreation,3
+356102,Ornamental Aquatic Animals,3
+357101,Household Insects and Garden Pests,3
+357100,Insects and Mankind,3
+359202,Plant and Food Safety,3
+359203,Horticultural Wisdom,3
+359206,Landscape Environment Behaviors and Minds,3
+360100,Plant Pathology in Everyday Life,3
+362211,Principles of Conservation,3
+365222,Aesthetics Natural Areas and Ecotourism,3
+461100,Herbs for Health and Beauty,3
+461170,Cosmetics in Everyday Life,3
+462130,Medications in Everyday Life,3
+510100,Wellness,3
+515101,Radiation in Everyday Life,3
+571151,Science and Art for Happiness Creation,3
+601201,Principles of Food Processing and Preservation,3
+602100,Introduction to Appreciation of Biotechnology,3
+602102,Life and Alternative Energy,3
+602103,Agro-Industry and Quality of Life,3
+603200,Packagingin Daily Life,3
+610112,Food Product Innovation,3
+610114,Food for Health and Beauty,3
+702101,Finance for Daily Life,3
+702213,Personal Financial Management,3
+703103,Introduction to Entrepreneurship and Business,3
+703322,Communication for Business Results,3
+703330,MEaditation for Business Leaders,3
+705191,Smart Consumer,1
+705211,Marketing Principles,3
+751100,Economics for Everyday Life,3
+751101,Principles of Economics 1,3
+751102,Principles of Economics 2,3
+801100,Architecture in Everyday Life,3
+851103,Lifeand Society through Media,3
+852100,Introduction to Film,3
+951100,Modern Life and Animation,3
+953111,Software for Everyday Life,3
