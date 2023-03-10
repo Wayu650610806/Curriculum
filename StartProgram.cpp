@@ -3,6 +3,7 @@
 #include"Curriculum.cpp"
 #include"FirstEdit.cpp"
 #include"Tutorial.cpp"
+#include"drop.cpp"
 using namespace std;
 vector<course> F1;
 int Start_program(){
@@ -38,9 +39,17 @@ int Start_program(){
     }   
      if(command==4){
         readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+        int input = 0;
+        int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
-        
-        firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+        // firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+        cout << "Select function you want to do [1] Move subject [2] Add subject [3] Delete subject"<<endl;
+        cout << "You select :";
+        cin >> key;
+        if(key == 3){
+            printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
+            drop(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+            }
         int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
         cout << "\nTotal credit : " << total << endl<<endl;
     }
