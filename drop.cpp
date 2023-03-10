@@ -4,6 +4,7 @@ using namespace std;
 void drop(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2,vector<course> &GE,vector<course> &LP,vector<course> &IC,vector<course> &MJ){
 	int y,s;
 	int i = 1;
+	cout << "Example V" << endl;
 	while(i==1){	
 		cout << "What year and semester do you want to drop?" << endl;
 		cin >> y >> s;
