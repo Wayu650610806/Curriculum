@@ -43,10 +43,10 @@ int Start_program(){
         int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
         // firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
-        cout << "Select function you want to do [1] Move subject [2] Add subject [3] Delete subject"<<endl;
+        cout << "Select function you want to do [1] Add subject [2] Delete subject"<<endl;
         cout << "You select :";
         cin >> key;
-        if(key == 3){
+        if(key == 2){
             printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
             drop(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
             }
