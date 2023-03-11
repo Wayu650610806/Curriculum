@@ -197,10 +197,5 @@ int printreport(vector<course> F1,vector<course> F2,vector<course> S1,vector<cou
 	for(unsigned int i = 0;i < Fo2.size(); i++){
 		cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
 	}
-	cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
-	for(unsigned int i = 0;i < Fo2.size(); i++){
-		cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
-		credit = credit + Fo2[i].credit;
-    }
 	return credit;
 }
