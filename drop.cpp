@@ -8,7 +8,6 @@ void drop(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course
 	while(i==1){	
 		cout << "What year and semester do you want to drop?" << endl;
 		cin >> y >> s;
-		cout << "Test" << endl;
 		switch (y)
 		{
 		case 1:
