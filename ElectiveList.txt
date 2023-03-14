@@ -94,7 +94,7 @@ MJ
 269461,Personal Software Process Improvement,3	
 269462,Introduction to Human-Computer Interaction,3
 261400,Computer Engineering Training,3
-Free
+FR
 001210,Oral Experrion 1,3
 003191,German for Beginners 1,3
 006103,Home and Community,3
@@ -254,3 +254,4 @@ Free
 852100,Introduction to Film,3
 951100,Modern Life and Animation,3
 953111,Software for Everyday Life,3
+end

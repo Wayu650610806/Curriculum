@@ -24,6 +24,7 @@ int Start_program(){
     vector<course> LP = {};
     vector<course> IC = {};
     vector<course> MJ = {};
+    vector<course> FR = {};
     cout<<"Please select\n";
     cout<<"\t1.Tutorial\n\t2.Show Map\n\t3.Curriculum\n\t4.Edit\n";
     cout<<"Input number : ";
@@ -38,11 +39,11 @@ int Start_program(){
         ShowCu(y,s);
     }   
      if(command==4){
-        readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+        readfile(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
         int input = 0;
         int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
-        // firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
+         firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
         cout << "Select function you want to do [1] Add subject [2] Delete subject"<<endl;
         cout << "You select :";
         cin >> key;

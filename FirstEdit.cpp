@@ -1,14 +1,15 @@
 #include<iostream>
 #include"Readfile.cpp"
 using namespace std;
-void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2,vector<course> &GE,vector<course> &LP,vector<course> &IC,vector<course> &MJ){
+void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2,vector<course> &GE,vector<course> &LP,vector<course> &IC,vector<course> &MJ,vector<course> &FR){
 	string input;
-	int state=1,a=1;
+	int state=1,a=1,c=0,temp=0;
 	cout<<"\n\t\t\t\t" << "First year 2nd Semester" << endl;
 	while(state==a){
 		cout<<"Please select General Education course <type 1 to see curriculum> <type 2 to see GE that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" << "First year 2nd Semester" << endl;
 				for(unsigned int i = 0;i < F2.size()-1; i++){
@@ -24,43 +25,68 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 			else{
 				for(unsigned int i=0;i<GE.size();i++){
 					if(GE[i].code==input){
-						state++;
 						F2.insert(F2.begin()+(F2.size()-1),GE[i]);
 						GE.erase(GE.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";
-				
+				if(c==0) cout<<"Not found\n";
 			}
+	 c=0;
+		for(unsigned int i = 0;i < F2.size()-1; i++){
+					c+=F2[i].credit;
+				}
+		if(c>=19)state++;
 	}
 	a++;
+	cout<<"\n\t\t\t\t" << "First year 2nd Semester" << endl;
+		for(unsigned int i = 0;i < F2.size()-1; i++){
+			cout<<F2[i].credit<<" "<< F2[i].name << " ("<< F2[i].code << ")"<<"\n";
+		}
 	cout<<"\n\t\t\t\t" << "Second year 1st Semester" << endl;
 	while(state==a){
 		cout<<"Please select General Education course <type 1 to see curriculum> <type 2 to see GE that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" << "Second year 1st Semester" << endl;
-				for(unsigned int i = 0;i < F2.size()-1; i++){
+				for(unsigned int i = 0;i < S1.size()-1; i++){
 					cout<<S1[i].credit<<" "<< S1[i].name << " ("<< S1[i].code << ")"<<"\n";
 				}
 			}
 			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "General Education Elective Courses" << endl;
 				for(unsigned int i = 0;i < GE.size()-1; i++){
-					cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
+				
+						cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
+					
     			}
 			}
 			else{
 				for(unsigned int i=0;i<GE.size();i++){
-					if(GE[i].code==input){
-						state++;
+					if(GE[i].code==input ){
 						S1.insert(S1.begin()+(S1.size()-1),GE[i]);
 						GE.erase(GE.begin()+i);
+						c=1;
 						}
+		
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+		c=0;
+		for(unsigned int i = 0;i < S1.size()-1; i++){
+			c+=S1[i].credit;
+		}
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
+			for(unsigned int i=S1.size()-1;i>7;i--){
+				GE.insert(GE.begin()+(GE.size()-1),S1[i-1]);
+	 			S1.erase(S1.begin()+i);
+				c=0;
+			}
+		}
+		if(c>=21) state++;
 	}
 	a++;		
 	cout<<"\n\t\t\t\t" << "Third year 1st Semester" << endl;
@@ -68,6 +94,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Third year 1st Semester" << endl;
 				for(unsigned int i = 0;i < T1.size()-1; i++){
@@ -83,19 +110,30 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						state++;
+						temp+=MJ[i].credit;
 						T1.insert(T1.begin()+(T1.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
+						c=1;
+						
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+		c=0;
+		for(unsigned int i = 0;i < T1.size()-1; i++){
+			c+=T1[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+		}
 	}
 	a++;
 while(state==a){
 		cout<<"Please select Innovative Co-creator course <type 1 to see curriculum> <type 2 to see IC that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Third year 1st Semester" << endl;
 				for(unsigned int i = 0;i < T1.size()-1; i++){
@@ -111,13 +149,22 @@ while(state==a){
 			else{
 				for(unsigned int i=0;i<IC.size();i++){
 					if(IC[i].code==input){
-						state++;
+						temp+=IC[i].credit;
 						T1.insert(T1.begin()+(T1.size()-1),IC[i]);
 						IC.erase(IC.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+		c=0;
+		for(unsigned int i = 0;i <T1.size()-1; i++){
+			c+=T1[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+		}
 	}
 	a++;
 cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
@@ -125,6 +172,7 @@ cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Third year 2nd Semester" << endl;
 				for(unsigned int i = 0;i < T2.size()-1; i++){
@@ -140,19 +188,29 @@ cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						state++;
+						temp+=MJ[i].credit;
 						T2.insert(T2.begin()+(T2.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+			c=0;
+		for(unsigned int i = 0;i < T2.size()-1; i++){
+			c+=T2[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+ 		}
 	}
 	a++;
 while(state==a){
 		cout<<"Please select General Education Elective course <type 1 to see curriculum> <type 2 to see GE that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Third year 2nd Semester" << endl;
 				for(unsigned int i = 0;i < T2.size()-1; i++){
@@ -162,25 +220,35 @@ while(state==a){
 			else if(input=="2"){
 				 cout<<"\n\t\t\t\t" << "General Education Elective Courses" << endl;
 				for(unsigned int i = 0;i < GE.size()-1; i++){
-					cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
+					if(GE[i].credit==1)cout<<GE[i].credit<<" "<< GE[i].name << " ("<< GE[i].code << ")"<<"\n";
     			}
 			}
 			else{
 				for(unsigned int i=0;i<GE.size();i++){
 					if(GE[i].code==input){
-						state++;
+						temp+=GE[i].credit;
 						T2.insert(T2.begin()+(T2.size()-1),GE[i]);
 						GE.erase(GE.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+		c=0;
+		for(unsigned int i = 0;i < T2.size()-1; i++){
+			c+=T2[i].credit;
+		}
+		if(temp>0){
+			temp=0;
+			state++;
+		}
 	}
 	a++;
 while(state==a){
 		cout<<"Please select Learner person course <type 1 to see curriculum> <type 2 to see LP that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Third year 2nd Semester" << endl;
 				for(unsigned int i = 0;i < T2.size()-1; i++){
@@ -196,13 +264,22 @@ while(state==a){
 			else{
 				for(unsigned int i=0;i<LP.size();i++){
 					if(LP[i].code==input){
-						state++;
+						temp+=LP[i].credit;
 						T2.insert(T2.begin()+(T2.size()-1),LP[i]);
 						LP.erase(LP.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+		c=0;
+		for(unsigned int i = 0;i < T2.size()-1; i++){
+			c+=T2[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+		}
 	}
 	a++;
 cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
@@ -210,6 +287,7 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Forth year 1st Semester" << endl;
 				for(unsigned int i = 0;i < Fo1.size()-1; i++){
@@ -225,32 +303,60 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						state++;
+						temp+=MJ[i].credit;
 						Fo1.insert(Fo1.begin()+(Fo1.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+			c=0;
+		for(unsigned int i = 0;i < Fo1.size()-1; i++){
+			c+=Fo1[i].credit;
+		}
+		if(temp>8){
+			temp=0;
+			state++;
+		}
 	}
 	a++; 
 	while(state==a){
-		
-		cout<<"Please select Free Elective course <type 1 to see curriculum> \n";
+		cout<<"Please select Free Elective course <type 1 to see curriculum> <type 2 to see FR that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Forth year 1st Semester" << endl;
 				for(unsigned int i = 0;i < Fo1.size()-1; i++){
 					cout<<Fo1[i].credit<<" "<< Fo1[i].name << " ("<< Fo1[i].code << ")"<<"\n";
 				}
 			}
-			else{
-			cout<<"Input name's course : ";
-			cout<<"Input credit's course : ";
-			state++;
-			// Fo1.insert(Fo1.begin()+(Fo1.size()-1),);				
+			else if(input=="2"){
+				 cout<<"\n\t\t\t\t" << "Free Elective Courses" << endl;
+				for(unsigned int i = 0;i < FR.size()-1; i++){
+					cout<<FR[i].credit<<" "<< FR[i].name << " ("<< FR[i].code << ")"<<"\n";
+    			}
 			}
+			else{
+				for(unsigned int i=0;i<FR.size();i++){
+					if(FR[i].code==input){
+						temp+=FR[i].credit;
+						Fo1.insert(Fo1.begin()+(Fo1.size()-1),FR[i]);
+						FR.erase(FR.begin()+i);
+						c=1;
+						}
+				}
+				if(c==0) cout<<"Not found\n";
+			}
+			c=0;
+		for(unsigned int i = 0;i < Fo1.size()-1; i++){
+			c+=Fo1[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+		}
 	}
 	a++;  
 cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
@@ -258,6 +364,7 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
 				cout<<"\n\t\t\t\t" <<  "Forth year 2nd Semester" << endl;
 				for(unsigned int i = 0;i < Fo2.size()-1; i++){
@@ -273,32 +380,60 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						state++;
+						temp+=MJ[i].credit;
 						Fo2.insert(Fo2.begin()+(Fo2.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
+						c=1;
 						}
 				}
-				if(state==a) cout<<"Not found\n";		
+				if(c==0) cout<<"Not found\n";
 			}
+		c=0;
+		for(unsigned int i = 0;i < Fo2.size()-1; i++){
+			c+=Fo2[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+		}
 	}
 	a++; 
 	while(state==a){
-		
-		cout<<"Please select Free Elective course <type 1 to see curriculum> \n";
+		cout<<"Please select Free Elective course <type 1 to see curriculum> <type 2 to see FR that you can select>\n";
 		cout<<"Input code that you want to select : ";
 		cin>>input;
+		c=0;
 			if(input=="1"){
-				cout<<"\n\t\t\t\t" <<  "Forth year 2nd Semester" << endl;
+				cout<<"\n\t\t\t\t" <<  "Forth year 1st Semester" << endl;
 				for(unsigned int i = 0;i < Fo2.size()-1; i++){
-					cout<<Fo2[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
+					cout<<Fo1[i].credit<<" "<< Fo2[i].name << " ("<< Fo2[i].code << ")"<<"\n";
 				}
 			}
-			else{
-			cout<<"Input name's course : ";
-			cout<<"Input credit's course : ";
-			state++;
-			// Fo1.insert(Fo1.begin()+(Fo1.size()-1),);				
+			else if(input=="2"){
+				 cout<<"\n\t\t\t\t" << "Free Elective Courses" << endl;
+				for(unsigned int i = 0;i < FR.size()-1; i++){
+					cout<<FR[i].credit<<" "<< FR[i].name << " ("<< FR[i].code << ")"<<"\n";
+    			}
 			}
+			else{
+				for(unsigned int i=0;i<FR.size();i++){
+					if(FR[i].code==input){
+						temp+=FR[i].credit;
+						Fo2.insert(Fo2.begin()+(Fo2.size()-1),FR[i]);
+						FR.erase(FR.begin()+i);
+						c=1;
+						}
+				}
+				if(c==0) cout<<"Not found\n";
+			}
+			c=0;
+		for(unsigned int i = 0;i < Fo1.size()-1; i++){
+			c+=Fo2[i].credit;
+		}
+		if(temp>2){
+			temp=0;
+			state++;
+		}
 	}
 	a++;  
 }

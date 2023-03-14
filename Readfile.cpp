@@ -10,7 +10,7 @@ struct course{
 	int credit;
 };
 
-void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2,vector<course> &GE,vector<course> &LP,vector<course> &IC,vector<course> &MJ){
+void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<course> &S2,vector<course> &T1,vector<course> &T2,vector<course> &Fo1,vector<course> &Fo2,vector<course> &GE,vector<course> &LP,vector<course> &IC,vector<course> &MJ,vector<course> &FR){
     ifstream file("cuorigin.txt");
 	ifstream file2("ElectiveList.txt");
 	string textline,textline2;
@@ -52,6 +52,9 @@ void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<co
 			GE.push_back(s); 	
 		}
 		if(state2 == 4){
+			if(textline2 == "FR"){ 
+				state2 = 5;
+				}
 			if(textline2 == "MJ") j = 1; 
 			if(textline2 == "MJ" || j != 1) continue;
 			course s;
@@ -59,6 +62,15 @@ void readfile(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<co
 			sscanf(textline2.c_str(),format,s.code,s.name,&s.credit);
 			//Use sscanf() to split the values in textline and assign those values to the members of struct s;
 			MJ.push_back(s); 	
+		}
+		if(state2 == 5){
+			if(textline2 == "FR") j = 1; 
+			if(textline2 == "FR" || j != 1) continue;
+			course s;
+			char format[]="%[^,],%[^,],%d";
+			sscanf(textline2.c_str(),format,s.code,s.name,&s.credit);
+			//Use sscanf() to split the values in textline and assign those values to the members of struct s;
+			FR.push_back(s); 	
 		}
 	}
 	while(getline(file,textline)){
