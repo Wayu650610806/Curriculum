@@ -44,15 +44,17 @@ int Start_program(){
         int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
          firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
-        cout << "Select function you want to do [1] Add subject [2] Delete subject"<<endl;
+        cout << "Select function you want to do [1] Add subject [2] Delete subject [3]Show all curriculum"<<endl;
         cout << "You select :";
         cin >> key;
         if(key == 2){
             printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
             drop(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
             }
-        // int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
-        // cout << "\nTotal credit : " << total << endl<<endl;
+        if(key == 3){
+        int total = printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
+        cout << "\nTotal credit : " << total << endl<<endl;
+        }
     }
     cout << "\nWant to select a function again? \x1b[1mY\x1b[0m/\x1b[1mN\x1b[0m : ";
     cin >> again;
