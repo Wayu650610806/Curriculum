@@ -32,7 +32,6 @@ int Start_program(){
     if(command==1) Tutorial();
     if(command==2) StudyMap();
     if(command==3){
-        cout<<"Form to input Year Semester" << endl;
         cout<<"Input Year and Semester : ";
         cin >> y;
         cin >> s;
@@ -44,8 +43,11 @@ int Start_program(){
         int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
          firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
-        cout << "Select function you want to do [1] Add subject [2] Delete subject [3]Show all curriculum"<<endl;
-        cout << "You select :";
+        cout << "What you want to do?\n";
+        cout << "[1] Add subject\n";
+        cout << "[2] Delete subject\n";
+        cout << "[3]Show all curriculum\n";
+        cout << "Your select :";
         cin >> key;
         if(key == 2){
             printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);

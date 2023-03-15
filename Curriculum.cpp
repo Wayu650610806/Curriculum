@@ -127,8 +127,8 @@ string ShowCu(int input,int sem){
             }
             break;
         }
-    cout << "Note : If you want to open next page type " << "\x1b[1mnext\x1b[0m" << " but If you want to open prev page type " << "\x1b[1mprev\x1b[0m" << "."<< endl;
-    cout << "Note : If you want to exit this feature type "<< "\x1b[1mok\x1b[0m" << "."<< endl;
+    cout << "Note : Type " << "\x1b[1mnext\x1b[0m" << " to go to next page. " << "Type " << "\x1b[1mprev\x1b[0m" << " to go to previous page."<< endl;
+    cout << "       Type "<< "\x1b[1mok\x1b[0m" << " to exit."<< endl;
     cout << "Your input : ";
     string text;
     cin >> text;

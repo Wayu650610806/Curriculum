@@ -7,8 +7,10 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 	cout<<"\n\t\t\t\t" << "First year 2nd Semester" << endl;
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select General Education course <type 1 to see curriculum> <type 2 to see GE that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select General Education course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable GE>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -29,7 +31,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 				for(unsigned int i=0;i<GE.size();i++){
 					if(GE[i].code==input){
 						temp+=GE[i].credit;
-						cout<<"You have selected "<<GE[i].name<<endl;
+						cout<<"You have selected "<<GE[i].name << "!!" <<endl;
 						F2.insert(F2.begin()+(F2.size()-1),GE[i]);
 						GE.erase(GE.begin()+i);
 						c=1;
@@ -57,8 +59,10 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 	cout<<"\n\t\t\t\t" << "Second year 1st Semester" << endl;
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select General Education course <type 1 to see curriculum> <type 2 to see GE that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select General Education course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable GE>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -81,7 +85,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 				for(unsigned int i=0;i<GE.size();i++){
 					if(GE[i].code==input ){
 						temp+=GE[i].credit;
-						cout<<"You have selected "<<GE[i].name<<endl;
+						cout<<"You have selected "<<GE[i].name << "!!" <<endl;
 						S1.insert(S1.begin()+(S1.size()-1),GE[i]);
 						GE.erase(GE.begin()+i);
 						c=1;
@@ -117,8 +121,10 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 	cout<<"\n\t\t\t\t" << "Third year 1st Semester" << endl;
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Major Elective course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable MJ>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -138,7 +144,7 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						cout<<"You have selected "<<MJ[i].name<<endl;
+						cout<<"You have selected "<<MJ[i].name << "!!" <<endl;
 						temp+=MJ[i].credit;
 						T1.insert(T1.begin()+(T1.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
@@ -163,8 +169,10 @@ void firstEdit(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<c
 	a++;
 while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Innovative Co-creator course <type 1 to see curriculum> <type 2 to see IC that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Innovative Co-creator course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable IC>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -184,7 +192,7 @@ while(state==a){
 			else{
 				for(unsigned int i=0;i<IC.size();i++){
 					if(IC[i].code==input){
-						cout<<"You have selected "<<IC[i].name<<endl;
+						cout<<"You have selected "<<IC[i].name << "!!" <<endl;
 						temp+=IC[i].credit;
 						T1.insert(T1.begin()+(T1.size()-1),IC[i]);
 						IC.erase(IC.begin()+i);
@@ -213,8 +221,10 @@ while(state==a){
 cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Major Elective course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable MJ>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -234,7 +244,7 @@ cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						cout<<"You have selected "<<MJ[i].name<<endl;
+						cout<<"You have selected "<<MJ[i].name << "!!" <<endl;
 						temp+=MJ[i].credit;
 						T2.insert(T2.begin()+(T2.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
@@ -259,8 +269,10 @@ cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 	a++;
 while(state==a){
 		cout<<endl<<"You have "<<1-temp<<" credits to select"<<endl;
-		cout<<"Please select General Education Elective course <type 1 to see curriculum> <type 2 to see GE that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select General Education course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable GE>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -280,7 +292,7 @@ while(state==a){
 			else{
 				for(unsigned int i=0;i<GE.size();i++){
 					if(GE[i].code==input){
-						cout<<"You have selected "<<GE[i].name<<endl;
+						cout<<"You have selected "<<GE[i].name << "!!" <<endl;
 						temp+=GE[i].credit;
 						T2.insert(T2.begin()+(T2.size()-1),GE[i]);
 						GE.erase(GE.begin()+i);
@@ -305,8 +317,10 @@ while(state==a){
 	a++;
 while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Learner person course <type 1 to see curriculum> <type 2 to see LP that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Learner person course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable LP>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -326,7 +340,7 @@ while(state==a){
 			else{
 				for(unsigned int i=0;i<LP.size();i++){
 					if(LP[i].code==input){
-						cout<<"You have selected "<<LP[i].name<<endl;
+						cout<<"You have selected "<<LP[i].name << "!!" <<endl;
 						temp+=LP[i].credit;
 						T2.insert(T2.begin()+(T2.size()-1),LP[i]);
 						LP.erase(LP.begin()+i);
@@ -355,8 +369,10 @@ while(state==a){
 cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 	while(state==a){
 		cout<<endl<<"You have "<<9-temp<<" credits to select"<<endl;
-		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Major Elective course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable MJ>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -376,7 +392,7 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						cout<<"You have selected "<<MJ[i].name<<endl;
+						cout<<"You have selected "<<MJ[i].name << "!!" <<endl;
 						temp+=MJ[i].credit;
 						Fo1.insert(Fo1.begin()+(Fo1.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
@@ -401,8 +417,10 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 	a++; 
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Free Elective course <type 1 to see curriculum> <type 2 to see FR that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Free Elective course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable FR>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -422,7 +440,7 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 			else{
 				for(unsigned int i=0;i<FR.size();i++){
 					if(FR[i].code==input){
-						cout<<"You have selected "<<FR[i].name<<endl;
+						cout<<"You have selected "<<FR[i].name << "!!" <<endl;
 						temp+=FR[i].credit;
 						Fo1.insert(Fo1.begin()+(Fo1.size()-1),FR[i]);
 						FR.erase(FR.begin()+i);
@@ -448,8 +466,10 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Major Elective course <type 1 to see curriculum> <type 2 to see MJ that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Major Elective course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable MJ>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -469,7 +489,7 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 			else{
 				for(unsigned int i=0;i<MJ.size();i++){
 					if(MJ[i].code==input){
-						cout<<"You have selected "<<MJ[i].name<<endl;
+						cout<<"You have selected "<<MJ[i].name << "!!" <<endl;
 						temp+=MJ[i].credit;
 						Fo2.insert(Fo2.begin()+(Fo2.size()-1),MJ[i]);
 						MJ.erase(MJ.begin()+i);
@@ -494,8 +514,10 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 	a++; 
 	while(state==a){
 		cout<<endl<<"You have "<<3-temp<<" credits to select"<<endl;
-		cout<<"Please select Free Elective course <type 1 to see curriculum> <type 2 to see FR that you can select>\n";
-		cout<<"Input code that you want to select : ";
+		cout<<"Select Free Elective course\n";
+		cout<<"\t<type 1 to see Curriculum>\n";
+		cout<<"\t<type 2 to see selectable FR>\n";
+		cout<<"\tInput your code : ";
 		cin>>input;
 		c=0;
 			if(input=="1"){
@@ -515,7 +537,7 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 			else{
 				for(unsigned int i=0;i<FR.size();i++){
 					if(FR[i].code==input){
-						cout<<"You have selected "<<FR[i].name<<endl;
+						cout<<"You have selected "<<FR[i].name << "!!" <<endl;
 						temp+=FR[i].credit;
 						Fo2.insert(Fo2.begin()+(Fo2.size()-1),FR[i]);
 						FR.erase(FR.begin()+i);
