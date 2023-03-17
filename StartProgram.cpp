@@ -4,6 +4,7 @@
 #include"FirstEdit.cpp"
 #include"Tutorial.cpp"
 #include"drop.cpp"
+#include"FreeAdd.cpp"
 using namespace std;
 vector<course> F1;
 int Start_program(){
@@ -42,13 +43,17 @@ int Start_program(){
         int input = 0;
         int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
-         firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
+         //firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
         cout << "What you want to do?\n";
         cout << "[1] Add subject\n";
         cout << "[2] Delete subject\n";
         cout << "[3]Show all curriculum\n";
         cout << "Your select :";
         cin >> key;
+        if(key == 1){
+            printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
+            FreeAdd(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
+        }
         if(key == 2){
             printreport(F1,F2,S1,S2,T1,T2,Fo1,Fo2);
             drop(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ);
