@@ -136,11 +136,17 @@ string ShowCu(int input,int sem){
     if(text == "NEXT"){
         if(sem == 1){
             return ShowCu(input,2);
+        }else if(sem == 2 && input == 4){
+            cout << "Invalid your type please try again" << endl;
+            return ShowCu(input,sem);
         }else if(sem == 2){
             return ShowCu(input+1,1);
         }
     }else if(text == "PREV"){
-        if(sem == 1){
+        if(sem == 1 && input == 1){
+             cout << "Invalid your type please try again" << endl;
+            ShowCu(input,sem);
+        }else if(sem == 1){
             return ShowCu(input-1,2);
         }else if(sem == 2){
             return ShowCu(input,1);
