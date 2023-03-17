@@ -53,8 +53,8 @@ void FreeAdd(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<cou
 		for(unsigned int i = 0;i < F2.size()-1; i++){
 					c+=F2[i].credit;
 				}
-		if(c>21){
-			cout<<"Your credits are more than 21 please select again\n";
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
 			for(unsigned int i=F2.size()-1;i>7;i--){
 				FR.insert(FR.begin()+(FR.size()-1),F2[i-1]);
 	 			F2.erase(F2.begin()+i);
@@ -120,8 +120,8 @@ void FreeAdd(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<cou
 		for(unsigned int i = 0;i < S2.size()-1; i++){
 			c+=S2[i].credit;
 		}
-		if(c>21){
-			cout<<"Your credits are more than 21 please select again\n";
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
 			for(unsigned int i=S2.size()-1;i>7;i--){
 				FR.insert(FR.begin()+(FR.size()-1),S2[i-1]);
 	 			S2.erase(S2.begin()+i);
@@ -182,8 +182,8 @@ void FreeAdd(vector<course> &F1,vector<course> &F2,vector<course> &S1,vector<cou
 		for(unsigned int i = 0;i <T1.size()-1; i++){
 			c+=T1[i].credit;
 		}
-		if(c>21){
-			cout<<"Your credits are more than 21 please select again\n";
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
 			for(unsigned int i=T1.size()-1;i>7;i--){
 				FR.insert(FR.begin()+(FR.size()-1),T1[i-1]);
 	 			T1.erase(T1.begin()+i);
@@ -244,8 +244,8 @@ cout<<"\n\t\t\t\t" << "Third year 2nd Semester" << endl;
 		for(unsigned int i = 0;i < T2.size()-1; i++){
 			c+=T2[i].credit;
 		}
-		if(c>21){
-			cout<<"Your credits are more than 21 please select again\n";
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
 			for(unsigned int i=T2.size()-1;i>7;i--){
 				FR.insert(FR.begin()+(FR.size()-1),T2[i-1]);
 	 			T2.erase(T2.begin()+i);
@@ -307,8 +307,8 @@ cout<<"\n\t\t\t\t" << "Forth year 1st Semester" << endl;
 		for(unsigned int i = 0;i < Fo1.size()-1; i++){
 			c+=Fo1[i].credit;
 		}
-		if(c>21){
-			cout<<"Your credits are more than 21 please select again\n";
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
 			for(unsigned int i=Fo1.size()-1;i>7;i--){
 				FR.insert(FR.begin()+(FR.size()-1),Fo1[i-1]);
 	 			Fo1.erase(Fo1.begin()+i);
@@ -370,8 +370,8 @@ cout<<"\n\t\t\t\t" << "Forth year 2nd Semester" << endl;
 		for(unsigned int i = 0;i < Fo2.size()-1; i++){
 			c+=Fo2[i].credit;
 		}
-		if(c>21){
-			cout<<"Your credits are more than 21 please select again\n";
+		if(c>22){
+			cout<<"Your credits are more than 22 please select again\n";
 			for(unsigned int i=Fo2.size()-1;i>7;i--){
 				FR.insert(FR.begin()+(FR.size()-1),Fo2[i-1]);
 	 			Fo2.erase(Fo2.begin()+i);

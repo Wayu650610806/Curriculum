@@ -43,7 +43,7 @@ int Start_program(){
         int input = 0;
         int key = 0;
         cout<<"\nFirst, you have to select all ejective courses\n";
-         //firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
+        firstEdit(F1,F2,S1,S2,T1,T2,Fo1,Fo2,GE,LP,IC,MJ,FR);
         cout << "What you want to do?\n";
         cout << "[1] Add subject\n";
         cout << "[2] Delete subject\n";
