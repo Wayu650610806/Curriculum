@@ -47,7 +47,7 @@ int Start_program(){
         cout << "What you want to do?\n";
         cout << "[1] Add subject\n";
         cout << "[2] Delete subject\n";
-        cout << "[3]Show all curriculum\n";
+        cout << "[3] Show all curriculum\n";
         cout << "Your select :";
         cin >> key;
         if(key == 1){
